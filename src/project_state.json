@@ -1,7 +1,7 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 37,
-  "summary": "Professional website for Ethos Towing Services INC, a towing company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website will include an integrated chatbot for customer interaction.",
+  "projectStateVersion": 43,
+  "summary": "Professional website for Ethos Towing & Recovery INC, a towing and recovery company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website includes an integrated chatbot for customer interaction and displays jump start services.",
   "architectural_notes": [
     "Website type: Professional service business website for towing company",
     "Target audience: Customers needing towing services in Fresno, CA area",
@@ -621,6 +621,78 @@
         "REQ-78"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-revert-the-header-component-contact-layout-to-the-previous-version-before-the-recent-chatbot-related-changes-restoring-the-original-desktop-and-mobile-layout-structure-button-positioning-and-styling",
+      "title": "Revert the Header component contact layout to the previous version before the recent chatbot-related changes, restoring the original desktop and mobile layout structure, button positioning, and styling",
+      "reqIds": [
+        "REQ-79"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-email-address-queries-ethostowing-com-displayed-under-the-contact-phone-number-button-559-944-8178-in-the-header-component-for-both-desktop-and-mobile-versions",
+      "title": "Add the email address 'queries@ethostowing.com' displayed under the contact phone number button '559-944-8178' in the Header component for both desktop and mobile versions",
+      "reqIds": [
+        "REQ-80"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-all-instances-of-ethos-towing-services-inc-and-ethos-towing-services-to-ethos-towing-recovery-inc-throughout-the-entire-application-including-header-component-hero-component-footer-component-and-any-other-locations-where-the-company-name-appears",
+      "title": "Change all instances of 'Ethos Towing Services INC' and 'Ethos Towing Services' to 'Ethos Towing & Recovery INC' throughout the entire application, including Header component, Hero component, Footer component, and any other locations where the company name appears",
+      "reqIds": [
+        "REQ-81"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-jump-start-service-as-a-seventh-service-offering-in-the-services-component-including-an-appropriate-icon-description-explaining-battery-jump-start-assistance-and-styling-consistent-with-the-existing-six-service-cards",
+      "title": "Add Jump Start Service as a seventh service offering in the Services component, including an appropriate icon, description explaining battery jump start assistance, and styling consistent with the existing six service cards",
+      "reqIds": [
+        "REQ-82"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-include-jump-start-service-in-the-list-of-available-services-when-users-ask-about-service-types",
+      "title": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to include Jump Start Service in the list of available services when users ask about service types",
+      "reqIds": [
+        "REQ-83"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-resize-the-ethos-towing-recovery-text-in-the-header-component-for-mobile-viewports-so-it-fits-properly-within-the-available-header-area-without-overflowing-or-being-cut-off",
+      "title": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
+      "reqIds": [
+        "REQ-84"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-jump-start-service-as-a-separate-seventh-service-card-from-the-services-component-and-incorporate-jump-start-assistance-into-the-vehicle-recovery-service-description-renaming-the-vehicle-recovery-service-to-vehicle-recovery-jump-start-or-similar-appropriate-title",
+      "title": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
+      "reqIds": [
+        "REQ-85"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-chatbot-fill-out-form-suggestion-button-functionality-so-that-clicking-or-tapping-it-properly-opens-displays-the-contact-form-on-all-devices-including-mobile",
+      "title": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
+      "reqIds": [
+        "REQ-86"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-reflect-that-jump-start-service-is-now-part-of-vehicle-recovery-services-rather-than-a-standalone-offering",
+      "title": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
+      "reqIds": [
+        "REQ-87"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -743,6 +815,36 @@
     {
       "id": "AR-27",
       "summary": "Change long haul distance from 'up to 400 miles' to 'entire California state' wherever mentioned in the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-28",
+      "summary": "Revert contact layout to previous version and add email under contact button for both mobile and desktop",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-29",
+      "summary": "Change all instances of 'Ethos Towing' to 'Ethos Towing & Recovery' throughout the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-31",
+      "summary": "Fix mobile layout: resize 'ETHOS Towing & Recovery' text to fit properly in mobile header area",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-32",
+      "summary": "Remove Jump Start as separate service and incorporate it into the Vehicle Recovery section (rename section if needed)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-33",
+      "summary": "Fix chatbot 'Fill out form' button not opening the contact form when tapped",
       "reqIds": [],
       "status": "pending"
     }

@@ -51,6 +51,18 @@ export default function Chatbot({
   };
 
   const handleSuggestionClick = (suggestion: string) => {
+    // Handle "Fill out form" or "Fill out contact form" suggestions
+    if (suggestion.toLowerCase().includes('fill out')) {
+      const contactForm = document.getElementById('contact-form');
+      if (contactForm) {
+        onClose(); // Close chatbot first
+        setTimeout(() => {
+          contactForm.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+      return;
+    }
+    
     onSendMessage(suggestion);
   };
 

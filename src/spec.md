@@ -1,11 +1,12 @@
 # Specification
 
 ## Summary
-**Goal:** Fix chatbot display issues, add email contact to header, and update service coverage to California-wide.
+**Goal:** Fix mobile header text sizing, merge Jump Start service into Vehicle Recovery, and fix chatbot form button.
 
 **Planned changes:**
-- Fix chatbot answer display so bot responses open and show properly when users interact with the chatbot
-- Add email address 'queries@ethostowing.com' under the phone number in the header
-- Update all references from 'up to 400 miles' to 'entire California state' throughout the website
+- Resize 'ETHOS Towing & Recovery' text in header to fit properly on mobile viewports
+- Remove Jump Start as a separate service and incorporate it into Vehicle Recovery service (rename to 'Vehicle Recovery & Jump Start' or similar)
+- Fix chatbot 'Fill out form' button to properly open/display contact form on all devices
+- Update chatbot responses to reflect that Jump Start is now part of Vehicle Recovery services
 
-**User-visible outcome:** Users can see chatbot responses correctly, find the email address easily in the header, and understand that long haul towing services cover the entire state of California.
+**User-visible outcome:** Mobile users will see properly sized header text, the services section will display six consolidated service cards with jump start included in vehicle recovery, and the chatbot form button will successfully open the contact form on all devices.

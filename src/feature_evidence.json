@@ -2,26 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-fix-the-chatbot-answer-display-issue-so-that-bot-responses-open-and-display-properly-when-users-interact-with-the-chatbot-component",
-      "featureTitle": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
-      "files": [
-        "frontend/src/components/Chatbot.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-76"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-add-the-email-address-queries-ethostowing-com-displayed-prominently-under-the-phone-number-559-944-8178-in-the-header-component-at-the-top-of-the-website",
-      "featureTitle": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
+      "featureId": "feature-resize-the-ethos-towing-recovery-text-in-the-header-component-for-mobile-viewports-so-it-fits-properly-within-the-available-header-area-without-overflowing-or-being-cut-off",
+      "featureTitle": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
       "files": [
         "frontend/src/components/Header.tsx"
       ],
@@ -33,15 +15,14 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-77"
+        "REQ-84"
       ],
       "confidence": "high"
     },
     {
-      "featureId": "feature-update-all-references-to-long-haul-distance-service-from-up-to-400-miles-to-entire-california-state-throughout-the-website-including-services-component-servicearea-component-and-any-other-locations-where-this-distance-is-mentioned",
-      "featureTitle": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
+      "featureId": "feature-remove-jump-start-service-as-a-separate-seventh-service-card-from-the-services-component-and-incorporate-jump-start-assistance-into-the-vehicle-recovery-service-description-renaming-the-vehicle-recovery-service-to-vehicle-recovery-jump-start-or-similar-appropriate-title",
+      "featureTitle": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
       "files": [
-        "frontend/src/components/ServiceArea.tsx",
         "frontend/src/components/Services.tsx"
       ],
       "components": [
@@ -52,7 +33,43 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-78"
+        "REQ-85"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-fix-the-chatbot-fill-out-form-suggestion-button-functionality-so-that-clicking-or-tapping-it-properly-opens-displays-the-contact-form-on-all-devices-including-mobile",
+      "featureTitle": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
+      "files": [
+        "frontend/src/components/Chatbot.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-86"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-reflect-that-jump-start-service-is-now-part-of-vehicle-recovery-services-rather-than-a-standalone-offering",
+      "featureTitle": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
+      "files": [
+        "frontend/src/utils/chatbotResponses.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-87"
       ],
       "confidence": "high"
     }

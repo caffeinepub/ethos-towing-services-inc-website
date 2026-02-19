@@ -16,11 +16,11 @@ export default function Footer() {
             <div className="flex items-center gap-3 mb-6">
               <img 
                 src="/assets/mii.png" 
-                alt="Ethos Towing" 
+                alt="Ethos Towing & Recovery" 
                 className="h-10 w-10 object-contain"
               />
               <h3 className="text-xl font-display font-bold text-secondary-foreground">
-                Ethos Towing
+                Ethos Towing & Recovery
               </h3>
             </div>
             <p className="text-secondary-foreground/70 text-sm leading-relaxed mb-4">
@@ -155,6 +155,11 @@ export default function Footer() {
                   Motorcycle Towing
                 </a>
               </li>
+              <li>
+                <a href="#services" className="text-sm text-secondary-foreground/80 hover:text-primary transition-colors">
+                  Jump Start Service
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -163,7 +168,7 @@ export default function Footer() {
         <div className="border-t border-secondary-foreground/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-sm text-secondary-foreground/70 text-center md:text-left">
-              © {currentYear} Ethos Towing Services INC. All rights reserved.
+              © {currentYear} Ethos Towing & Recovery INC. All rights reserved.
             </p>
             
             <a 

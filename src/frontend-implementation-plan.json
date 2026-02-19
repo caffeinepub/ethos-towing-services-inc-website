@@ -1,64 +1,80 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix chatbot display, add email to header, update service distance to California-wide",
+  "title": "Fix mobile header text sizing, merge Jump Start into Vehicle Recovery, and fix chatbot form button",
   "requirements": [
     {
-      "id": "REQ-76",
-      "summary": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
+      "id": "REQ-84",
+      "summary": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area",
       "acceptanceCriteria": [
-        "Bot responses appear correctly when user sends messages",
-        "Message panel displays all chatbot answers without layout issues",
-        "Chatbot conversation flow works smoothly without display errors"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Chatbot.tsx",
-          "operation": "modify",
-          "description": "Fix the chatbot message display rendering to ensure bot responses are properly shown in the message panel. Review the message rendering logic, scroll behavior, and any conditional rendering that may prevent bot messages from displaying. Ensure the message list correctly renders both user and bot messages with appropriate styling and layout."
-        },
-        {
-          "path": "frontend/src/hooks/useChatbot.ts",
-          "operation": "modify",
-          "description": "Review and fix the message state management to ensure bot responses are correctly added to the messages array and trigger re-renders. Verify that the sendMessage function properly adds both user messages and corresponding bot responses to the state without timing or state update issues."
-        }
-      ]
-    },
-    {
-      "id": "REQ-77",
-      "summary": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
-      "acceptanceCriteria": [
-        "Email address 'queries@ethostowing.com' is visible in the Header component",
-        "Email is positioned directly under or adjacent to the phone number",
-        "Email styling is consistent with the header design and maintains white text color"
+        "Company name text displays fully within mobile header bounds",
+        "Text is legible and properly sized for mobile screens",
+        "No horizontal scrolling or text overflow on mobile devices",
+        "Text size adjusts responsively for different mobile viewport widths"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Header.tsx",
           "operation": "modify",
-          "description": "Add the email address 'queries@ethostowing.com' to the Header component positioned under or adjacent to the existing phone number '559-944-8178'. Ensure the email is styled consistently with white text color to match the header design. Implement the email as a mailto: link for user convenience while maintaining the header's existing layout structure and backdrop blur effects."
+          "description": "Add responsive text sizing using Tailwind breakpoint classes to the company name heading element. Apply smaller font sizes (text-lg or text-xl) for mobile viewports and larger sizes (text-2xl or text-3xl) for desktop viewports to ensure the text fits within the header bounds without overflow on all devices."
         }
       ]
     },
     {
-      "id": "REQ-78",
-      "summary": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
+      "id": "REQ-85",
+      "summary": "Remove Jump Start Service as a separate service card and incorporate jump start assistance into the Vehicle Recovery service, renaming it appropriately",
       "acceptanceCriteria": [
-        "All instances of '400 miles' or 'up to 400 miles' are replaced with 'entire California state'",
-        "Services section reflects California-wide coverage for long distance towing",
-        "ServiceArea component description updated to reflect California state coverage",
-        "No remaining references to 400-mile limit exist in the application"
+        "Services component displays six service cards instead of seven",
+        "Vehicle Recovery service card includes jump start assistance in its description",
+        "Service card title reflects the inclusion of jump start services (e.g., 'Vehicle Recovery & Jump Start')",
+        "Jump Start Service no longer appears as a standalone service card",
+        "Service grid layout remains balanced with six cards"
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/Services.tsx",
           "operation": "modify",
-          "description": "Update the long-distance towing service description to replace any reference to '400 miles' or 'up to 400 miles' with 'entire California state'. Review the service card content for long-distance/long haul towing and ensure the updated coverage area is accurately reflected in the description text."
+          "description": "Remove the Jump Start Service object from the services array. Update the Vehicle Recovery service object by changing its title to 'Vehicle Recovery & Jump Start' and expanding its description to mention jump start assistance as part of the recovery services offered. Ensure the services array contains exactly six service objects after this change."
+        }
+      ]
+    },
+    {
+      "id": "REQ-86",
+      "summary": "Fix the chatbot 'Fill out form' suggestion button functionality so clicking it properly opens/displays the contact form on all devices",
+      "acceptanceCriteria": [
+        "Clicking 'Fill out form' button in chatbot successfully scrolls to or reveals the contact form",
+        "Functionality works on both desktop and mobile devices",
+        "Contact form becomes visible and accessible after button tap",
+        "User can interact with the contact form fields after triggering the action",
+        "No console errors occur when the button is clicked"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Chatbot.tsx",
+          "operation": "modify",
+          "description": "Update the handleSuggestionClick function to properly handle the 'Fill out form' suggestion. Implement smooth scrolling behavior using scrollIntoView with behavior: 'smooth' to navigate to the ContactForm component's DOM element. Ensure the chatbot closes after the button is clicked to avoid blocking the form. Add proper error handling and ensure the scroll target element exists before attempting to scroll."
         },
         {
-          "path": "frontend/src/components/ServiceArea.tsx",
+          "path": "frontend/src/components/ContactForm.tsx",
           "operation": "modify",
-          "description": "Update the service coverage description to replace references to '400 miles' or '200-400 mile radius' with 'entire California state' for long haul services. Ensure the primary coverage area for Fresno/Central Valley remains intact while updating the extended coverage description to reflect California-wide service availability."
+          "description": "Add an id attribute (e.g., 'contact-form') to the main container element of the ContactForm component to serve as a scroll target for the chatbot's form navigation functionality. Ensure the id is applied to the outermost wrapper element of the form section."
+        }
+      ]
+    },
+    {
+      "id": "REQ-87",
+      "summary": "Update chatbot responses to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
+      "acceptanceCriteria": [
+        "Chatbot responses list six services instead of seven",
+        "Vehicle Recovery service description mentions jump start assistance",
+        "Jump Start is not listed as a separate service in chatbot responses",
+        "Service type queries return accurate information about the updated service structure"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/utils/chatbotResponses.ts",
+          "operation": "modify",
+          "description": "Update the service listing responses to show six services instead of seven by removing Jump Start Service from standalone mentions. Modify the Vehicle Recovery service description in responses to include jump start assistance. Update any keyword mappings or response patterns that reference jump start to redirect to the Vehicle Recovery & Jump Start service information. Ensure consistency across all response patterns that enumerate or describe available services."
         }
       ]
     }

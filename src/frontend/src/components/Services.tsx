@@ -26,8 +26,8 @@ export default function Services() {
     {
       icon: Anchor,
       image: '/assets/generated/icon-recovery.dim_64x64.png',
-      title: 'Vehicle Recovery',
-      description: 'Expert extraction from ditches, mud, or difficult terrain. Professional recovery services with specialized equipment.',
+      title: 'Vehicle Recovery & Jump Start',
+      description: 'Expert extraction from ditches, mud, or difficult terrain. Professional recovery services with specialized equipment. Includes fast jump start assistance for dead batteries - available 24/7.',
       color: 'from-accent/20 to-accent/5'
     },
     {
@@ -72,33 +72,53 @@ export default function Services() {
           {services.map((service, index) => {
             const IconComponent = service.icon;
             return (
-              <div 
-                key={index} 
-                className="group relative bg-card border border-border hover:border-primary/50 rounded-2xl overflow-hidden transition-all duration-300 hover:shadow-2xl hover:-translate-y-2"
+              <div
+                key={index}
+                className="group relative bg-card rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 border border-border/50 hover:border-primary/30 overflow-hidden"
               >
                 {/* Gradient Background */}
-                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity`} />
+                <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
                 
-                <div className="relative z-10 p-8">
+                {/* Content */}
+                <div className="relative z-10">
                   {/* Icon */}
-                  <div className="inline-flex items-center justify-center w-14 h-14 mb-5 bg-gradient-to-br from-secondary/20 to-secondary/5 rounded-xl group-hover:scale-110 group-hover:rotate-3 transition-all">
-                    <IconComponent className="h-7 w-7 text-secondary" />
+                  <div className="mb-6 relative">
+                    <div className="absolute inset-0 bg-primary/20 blur-2xl rounded-full scale-75 group-hover:scale-100 transition-transform duration-300" />
+                    <div className="relative w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <IconComponent className="h-8 w-8 text-primary" />
+                    </div>
                   </div>
                   
+                  {/* Title */}
                   <h3 className="text-2xl font-display font-bold text-foreground mb-4 group-hover:text-primary transition-colors">
                     {service.title}
                   </h3>
                   
-                  <p className="text-base text-muted-foreground leading-relaxed">
+                  {/* Description */}
+                  <p className="text-muted-foreground leading-relaxed">
                     {service.description}
                   </p>
                 </div>
                 
-                {/* Bottom Accent Line */}
-                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left" />
+                {/* Decorative Corner */}
+                <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full blur-2xl -translate-y-16 translate-x-16 group-hover:bg-primary/10 transition-colors" />
               </div>
             );
           })}
+        </div>
+
+        {/* Call to Action */}
+        <div className="text-center mt-16">
+          <p className="text-lg text-muted-foreground mb-6">
+            Need immediate assistance? We're available 24/7
+          </p>
+          <a
+            href="tel:559-944-8178"
+            className="inline-flex items-center gap-2 px-8 py-4 bg-primary hover:bg-primary/90 text-primary-foreground font-bold rounded-xl shadow-lg hover:shadow-xl transition-all text-lg"
+          >
+            <Truck className="h-5 w-5" />
+            Call 559-944-8178
+          </a>
         </div>
       </div>
     </section>

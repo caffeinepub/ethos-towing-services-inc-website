@@ -1,75 +1,100 @@
 {
   "kind": "build_request",
-  "title": "Fix chatbot display, add email to header, update service distance to California-wide",
-  "projectName": "Ethos Towing Services",
-  "priority": "high",
+  "title": "Fix mobile header text sizing, merge Jump Start into Vehicle Recovery, and fix chatbot form button",
+  "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-76",
-      "text": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
+      "id": "REQ-84",
+      "text": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-user-final"
         ],
         "quotes": [
-          "chatbot answers are not opening properly fix it"
+          "in the mobile version ETHOS Towing & Recovery doesnt properly fit the area, resize the text so it can fit properly"
         ]
       },
       "acceptanceCriteria": [
-        "Bot responses appear correctly when user sends messages",
-        "Message panel displays all chatbot answers without layout issues",
-        "Chatbot conversation flow works smoothly without display errors"
+        "Company name text displays fully within mobile header bounds",
+        "Text is legible and properly sized for mobile screens",
+        "No horizontal scrolling or text overflow on mobile devices",
+        "Text size adjusts responsively for different mobile viewport widths"
       ]
     },
     {
-      "id": "REQ-77",
-      "text": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
+      "id": "REQ-85",
+      "text": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-user-final"
         ],
         "quotes": [
-          "provide email id under the phone number mentioned on top of the website"
+          "don't make jump start a seperate service incoporate it in vehicle recovery section rename it if needed"
         ]
       },
       "acceptanceCriteria": [
-        "Email address 'queries@ethostowing.com' is visible in the Header component",
-        "Email is positioned directly under or adjacent to the phone number",
-        "Email styling is consistent with the header design and maintains white text color"
+        "Services component displays six service cards instead of seven",
+        "Vehicle Recovery service card includes jump start assistance in its description",
+        "Service card title reflects the inclusion of jump start services (e.g., 'Vehicle Recovery & Jump Start')",
+        "Jump Start Service no longer appears as a standalone service card",
+        "Service grid layout remains balanced with six cards"
       ]
     },
     {
-      "id": "REQ-78",
-      "text": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
+      "id": "REQ-86",
+      "text": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-user-final"
         ],
         "quotes": [
-          "change long haul distance from up to 400 miles to entire California state whereever it is mentioned in the website"
+          "if we tap fill out form in the chatbot it does not come out fix it"
         ]
       },
       "acceptanceCriteria": [
-        "All instances of '400 miles' or 'up to 400 miles' are replaced with 'entire California state'",
-        "Services section reflects California-wide coverage for long distance towing",
-        "ServiceArea component description updated to reflect California state coverage",
-        "No remaining references to 400-mile limit exist in the application"
+        "Clicking 'Fill out form' button in chatbot successfully scrolls to or reveals the contact form",
+        "Functionality works on both desktop and mobile devices",
+        "Contact form becomes visible and accessible after button tap",
+        "User can interact with the contact form fields after triggering the action",
+        "No console errors occur when the button is clicked"
+      ]
+    },
+    {
+      "id": "REQ-87",
+      "text": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-user-final"
+        ],
+        "quotes": [
+          "don't make jump start a seperate service incoporate it in vehicle recovery section"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Chatbot responses list six services instead of seven",
+        "Vehicle Recovery service description mentions jump start assistance",
+        "Jump Start is not listed as a separate service in chatbot responses",
+        "Service type queries return accurate information about the updated service structure"
       ]
     }
   ],
   "constraints": [
-    "Maintain the existing chatbot state management structure in useChatbot.ts",
-    "Keep the Header component layout and existing phone number styling",
-    "Preserve the red, white, and blue color scheme throughout all changes"
+    "Maintain the existing red, white, and blue color scheme",
+    "Preserve the professional, authoritative design aesthetic",
+    "Do not modify backend/main.mo or other backend files",
+    "Keep the chatbot integration functional throughout changes",
+    "Maintain responsive design for all viewport sizes"
   ],
   "nonGoals": [
-    "Changing the chatbot's predefined response logic beyond fixing display issues",
-    "Modifying the backend actor or towing request data structure",
-    "Redesigning the Header component layout beyond adding the email display",
-    "Changing service area coverage beyond the text updates specified"
+    "Redesigning the entire header component layout",
+    "Changing the total number of features in the About section",
+    "Modifying the service area coverage information",
+    "Altering the contact form field structure",
+    "Changing the chatbot's overall functionality beyond the form button fix"
   ],
   "imageRequirements": {
     "required": [],

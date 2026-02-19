@@ -5,11 +5,11 @@ interface ChatResponse {
 
 const responses: Record<string, ChatResponse> = {
   greeting: {
-    text: "Hello! Welcome to Ethos Towing Services. I'm here to help you with any questions about our towing and roadside assistance services. How can I assist you today?",
+    text: "Hello! Welcome to Ethos Towing & Recovery. I'm here to help you with any questions about our towing and roadside assistance services. How can I assist you today?",
     suggestions: ["What services do you offer?", "What's your service area?", "How can I contact you?"]
   },
   services: {
-    text: "We offer comprehensive towing services including:\n\n• Emergency Towing - 24/7 rapid response\n• Long-Distance Towing - Entire California state\n• Roadside Assistance - Jump starts, tire changes, lockouts\n• Vehicle Recovery - Accident and off-road recovery\n• Flatbed Towing - Safe transport for luxury and specialty vehicles\n• Motorcycle Towing - Specialized equipment for bikes\n\nWhich service would you like to know more about?",
+    text: "We offer comprehensive towing services including:\n\n• Emergency Towing - 24/7 rapid response\n• Long-Distance Towing - Entire California state\n• Roadside Assistance - Jump starts, tire changes, lockouts\n• Vehicle Recovery & Jump Start - Accident recovery, off-road extraction, and battery jump starts\n• Flatbed Towing - Safe transport for luxury and specialty vehicles\n• Motorcycle Towing - Specialized equipment for bikes\n\nWhich service would you like to know more about?",
     suggestions: ["Tell me about emergency towing", "What about long-distance towing?", "Service area coverage"]
   },
   emergency: {
@@ -24,8 +24,12 @@ const responses: Record<string, ChatResponse> = {
     text: "Our Roadside Assistance includes:\n• Jump starts for dead batteries\n• Flat tire changes\n• Lockout services\n• Fuel delivery\n• Minor mechanical assistance\n\nWe're available 24/7 to get you back on the road quickly!",
     suggestions: ["Emergency towing", "Service area", "Contact us"]
   },
+  jumpStart: {
+    text: "Jump Start Service is part of our Vehicle Recovery & Jump Start offering! If your battery is dead, we'll come to your location and provide a professional jump start to get you back on the road quickly. Available 24/7 with fast response times!\n\nCall us anytime at 559-944-8178",
+    suggestions: ["Other roadside services", "Emergency towing", "Contact us"]
+  },
   recovery: {
-    text: "Vehicle Recovery services include accident recovery, off-road recovery, and extraction from difficult situations. Our experienced team has the equipment and expertise to safely recover your vehicle from any situation.\n\nAvailable 24/7 for emergency recovery needs.",
+    text: "Vehicle Recovery & Jump Start services include accident recovery, off-road recovery, extraction from difficult situations, and fast battery jump start assistance. Our experienced team has the equipment and expertise to safely recover your vehicle from any situation or get you started when your battery dies.\n\nAvailable 24/7 for emergency recovery and jump start needs.",
     suggestions: ["Emergency towing", "Other services", "Call now"]
   },
   flatbed: {
@@ -41,7 +45,7 @@ const responses: Record<string, ChatResponse> = {
     suggestions: ["What services do you offer?", "How do I contact you?", "Get a quote"]
   },
   availability: {
-    text: "We're available 24/7, 365 days a year! Day or night, weekends and holidays - whenever you need towing or roadside assistance, Ethos Towing Services is here for you.\n\nCall us anytime at 559-944-8178",
+    text: "We're available 24/7, 365 days a year! Day or night, weekends and holidays - whenever you need towing or roadside assistance, Ethos Towing & Recovery is here for you.\n\nCall us anytime at 559-944-8178",
     suggestions: ["Emergency towing", "Service area", "Other services"]
   },
   contact: {
@@ -57,7 +61,7 @@ const responses: Record<string, ChatResponse> = {
     suggestions: ["Emergency towing", "Contact information", "Service area"]
   },
   default: {
-    text: "I'm here to help! I can answer questions about:\n• Our towing services (emergency, long-distance, flatbed, motorcycle)\n• Roadside assistance and vehicle recovery\n• Service area coverage\n• Contact information and availability\n\nWhat would you like to know?",
+    text: "I'm here to help! I can answer questions about:\n• Our towing services (emergency, long-distance, flatbed, motorcycle)\n• Roadside assistance and vehicle recovery with jump start service\n• Service area coverage\n• Contact information and availability\n\nWhat would you like to know?",
     suggestions: ["What services do you offer?", "Service area", "Contact information"]
   }
 };
@@ -67,7 +71,8 @@ const keywords: Record<string, string[]> = {
   services: ["services", "what do you do", "what do you offer", "help with", "types of service"],
   emergency: ["emergency", "urgent", "immediate", "asap", "right now", "stranded", "broke down"],
   longDistance: ["long distance", "far", "miles", "relocate", "transport", "out of state", "california", "statewide"],
-  roadside: ["roadside", "jump start", "battery", "flat tire", "tire change", "lockout", "locked out", "fuel", "gas"],
+  roadside: ["roadside", "tire change", "lockout", "locked out", "fuel", "gas"],
+  jumpStart: ["jump start", "jump", "battery", "dead battery", "car won't start", "won't start"],
   recovery: ["recovery", "accident", "off-road", "stuck", "ditch", "crashed"],
   flatbed: ["flatbed", "flat bed", "luxury", "classic car", "low clearance", "safe transport"],
   motorcycle: ["motorcycle", "bike", "motorbike", "harley", "sport bike"],
