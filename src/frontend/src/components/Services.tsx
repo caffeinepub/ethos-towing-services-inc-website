@@ -13,7 +13,7 @@ export default function Services() {
       icon: Navigation,
       image: '/assets/generated/icon-longdistance.dim_64x64.png',
       title: 'Long-Distance Towing',
-      description: 'Reliable long-haul service covering up to 400 miles. Safe, secure transport for your vehicle wherever you need to go.',
+      description: 'Reliable long-haul service covering the entire California state. Safe, secure transport for your vehicle wherever you need to go.',
       color: 'from-accent/20 to-accent/5'
     },
     {

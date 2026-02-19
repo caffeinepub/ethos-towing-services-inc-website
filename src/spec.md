@@ -1,12 +1,11 @@
 # Specification
 
 ## Summary
-**Goal:** Replace the company logo and favicon with the new shield-design logo featuring the tow truck and American flag-styled ETHOS branding.
+**Goal:** Fix chatbot display issues, add email contact to header, and update service coverage to California-wide.
 
 **Planned changes:**
-- Replace logo in Header component with new shield design logo
-- Replace logo in Footer component with new shield design logo
-- Update website favicon to use new logo design
-- Ensure new logo has transparent background for seamless integration
+- Fix chatbot answer display so bot responses open and show properly when users interact with the chatbot
+- Add email address 'queries@ethostowing.com' under the phone number in the header
+- Update all references from 'up to 400 miles' to 'entire California state' throughout the website
 
-**User-visible outcome:** Users will see the updated ETHOS Towing Services branding with the shield logo design throughout the website (header, footer, and browser tab favicon).
+**User-visible outcome:** Users can see chatbot responses correctly, find the email address easily in the header, and understand that long haul towing services cover the entire state of California.

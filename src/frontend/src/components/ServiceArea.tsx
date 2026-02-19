@@ -69,43 +69,55 @@ export default function ServiceArea() {
                       Extended Coverage
                     </h3>
                     <p className="text-base text-muted-foreground leading-relaxed mb-4">
-                      Long-distance towing available within a 200-400 mile radius for special requests
+                      Long-haul towing services available throughout the entire California state for special requests
                     </p>
                     <div className="flex items-center gap-2 text-sm font-semibold text-accent">
                       <div className="w-2 h-2 bg-accent rounded-full" />
-                      <span>Reliable long-haul service</span>
+                      <span>Statewide service available</span>
                     </div>
                   </div>
                 </div>
               </div>
 
               {/* Call to Action */}
-              <div className="bg-secondary/95 border-2 border-secondary-foreground/20 rounded-2xl p-8 text-center">
-                <p className="text-secondary-foreground font-semibold text-lg mb-4">
-                  Not sure if we cover your area?
+              <div className="bg-gradient-to-br from-secondary/10 to-secondary/5 border border-border rounded-2xl p-8 text-center">
+                <h3 className="text-xl font-display font-bold text-foreground mb-3">
+                  Not Sure If We Cover Your Area?
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Give us a call and we'll let you know if we can help. We're always happy to discuss your specific needs.
                 </p>
-                <Button 
+                <Button
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all group"
                   asChild
                 >
                   <a href="tel:559-944-8178" className="flex items-center gap-2">
-                    <Phone className="h-5 w-5" />
-                    Call 559-944-8178
+                    <Phone className="h-5 w-5 group-hover:rotate-12 transition-transform" />
+                    <span>Call 559-944-8178</span>
                   </a>
                 </Button>
               </div>
             </div>
 
-            {/* Map Visual - Larger and Centered */}
-            <div className="order-1 lg:order-2 flex items-center justify-center p-4">
-              <div className="relative rounded-2xl overflow-hidden border-2 border-border shadow-2xl group w-full">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity z-10" />
+            {/* Map */}
+            <div className="order-1 lg:order-2">
+              <div className="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-border group">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none" />
                 <img 
                   src="/assets/generated/fresno-map-centered.dim_1000x800.png" 
-                  alt="Map of Fresno, CA. with pin marking location and 200-400 mile radius coverage areas"
-                  className="w-full h-auto relative z-0"
+                  alt="Service area map showing Fresno, CA and surrounding coverage" 
+                  className="w-full h-auto object-cover"
                 />
+              </div>
+              
+              <div className="mt-6 text-center">
+                <p className="text-sm text-muted-foreground">
+                  <span className="font-semibold text-foreground">Primary Coverage:</span> Fresno & Central Valley
+                </p>
+                <p className="text-sm text-muted-foreground mt-1">
+                  <span className="font-semibold text-foreground">Extended Service:</span> Entire California State
+                </p>
               </div>
             </div>
           </div>

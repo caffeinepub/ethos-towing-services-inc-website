@@ -1,95 +1,78 @@
 {
   "kind": "build_request",
-  "title": "Replace company logo and favicon with new design",
+  "title": "Fix chatbot display, add email to header, update service distance to California-wide",
   "projectName": "Ethos Towing Services",
-  "priority": "normal",
+  "priority": "high",
   "requirements": [
     {
-      "id": "REQ-68",
-      "text": "Replace the current company logo in the Header component with the user-provided logo image (mii.png) featuring the shield design with tow truck, American flag 'ETHOS' text, and 'TOWING SERVICES' subtitle",
+      "id": "REQ-76",
+      "text": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-user-final"
         ],
         "quotes": [
-          "replace the logos with this"
+          "chatbot answers are not opening properly fix it"
         ]
       },
       "acceptanceCriteria": [
-        "The Header component displays the new logo from mii.png",
-        "The logo maintains proper dimensions and aspect ratio",
-        "The logo is visible and properly styled within the header layout"
+        "Bot responses appear correctly when user sends messages",
+        "Message panel displays all chatbot answers without layout issues",
+        "Chatbot conversation flow works smoothly without display errors"
       ]
     },
     {
-      "id": "REQ-69",
-      "text": "Replace the company logo in the Footer component with the user-provided logo image (mii.png)",
+      "id": "REQ-77",
+      "text": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-user-final"
         ],
         "quotes": [
-          "replace the logos with this"
+          "provide email id under the phone number mentioned on top of the website"
         ]
       },
       "acceptanceCriteria": [
-        "The Footer component displays the new logo from mii.png",
-        "The logo is properly sized and positioned within the footer layout",
-        "The logo maintains visual consistency with the header logo"
+        "Email address 'queries@ethostowing.com' is visible in the Header component",
+        "Email is positioned directly under or adjacent to the phone number",
+        "Email styling is consistent with the header design and maintains white text color"
       ]
     },
     {
-      "id": "REQ-70",
-      "text": "Update the website favicon in frontend/index.html to use the new company logo from mii.png",
+      "id": "REQ-78",
+      "text": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-latest"
+          "msg-user-final"
         ],
         "quotes": [
-          "also for favicon"
+          "change long haul distance from up to 400 miles to entire California state whereever it is mentioned in the website"
         ]
       },
       "acceptanceCriteria": [
-        "The favicon displays the new logo design in the browser tab",
-        "The favicon is properly sized (32x32 or appropriate dimensions)",
-        "The favicon is visible across all major browsers"
-      ]
-    },
-    {
-      "id": "REQ-71",
-      "text": "Ensure the new logo image has a transparent background, removing any white or solid color backgrounds around the shield design",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-latest"
-        ]
-      },
-      "acceptanceCriteria": [
-        "The logo displays with full transparency around all edges",
-        "No visible background artifacts or white boxes appear around the logo",
-        "The logo integrates seamlessly with the header and footer backgrounds"
+        "All instances of '400 miles' or 'up to 400 miles' are replaced with 'entire California state'",
+        "Services section reflects California-wide coverage for long distance towing",
+        "ServiceArea component description updated to reflect California state coverage",
+        "No remaining references to 400-mile limit exist in the application"
       ]
     }
   ],
   "constraints": [
-    "Maintain existing logo positioning and layout structure in Header and Footer components",
-    "Preserve responsive behavior of logo elements across all screen sizes",
-    "Do not modify the single-actor backend architecture"
+    "Maintain the existing chatbot state management structure in useChatbot.ts",
+    "Keep the Header component layout and existing phone number styling",
+    "Preserve the red, white, and blue color scheme throughout all changes"
   ],
   "nonGoals": [
-    "Redesigning the header or footer layouts",
-    "Changing logo dimensions or aspect ratios beyond what's necessary for proper display",
-    "Modifying other branding elements or color schemes"
+    "Changing the chatbot's predefined response logic beyond fixing display issues",
+    "Modifying the backend actor or towing request data structure",
+    "Redesigning the Header component layout beyond adding the email display",
+    "Changing service area coverage beyond the text updates specified"
   ],
   "imageRequirements": {
-    "required": [
-      "Company logo with shield design, tow truck illustration, American flag-styled 'ETHOS' text, and 'TOWING SERVICES' subtitle with transparent background for use in header and footer (ethos-logo-new.dim_400x400.png)"
-    ],
-    "edits": [
-      "Remove white background and ensure full transparency around shield edges (mii.png > ethos-logo-transparent.dim_400x400.png)"
-    ]
+    "required": [],
+    "edits": []
   }
 }

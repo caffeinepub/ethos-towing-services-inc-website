@@ -1,4 +1,4 @@
-import { Phone, Mail, Menu } from 'lucide-react';
+import { Phone, Mail } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 export default function Header() {
@@ -31,26 +31,46 @@ export default function Header() {
           </div>
           
           {/* Contact Actions */}
-          <div className="flex items-center gap-3">
-            <a 
-              href="mailto:queries@ethostowing.com" 
-              className="hidden lg:flex items-center gap-2 text-white hover:text-white/90 transition-colors"
-            >
-              <Mail className="h-4 w-4" />
-              <span className="text-sm font-medium">queries@ethostowing.com</span>
-            </a>
+          <div className="flex items-center gap-4">
+            {/* Contact Info - Hidden on mobile */}
+            <div className="hidden md:flex flex-col items-end gap-1">
+              <a 
+                href="tel:559-944-8178" 
+                className="flex items-center gap-2 text-white hover:text-white/90 transition-colors"
+              >
+                <Phone className="h-4 w-4" />
+                <span className="text-sm font-bold">559-944-8178</span>
+              </a>
+              <a 
+                href="mailto:queries@ethostowing.com" 
+                className="flex items-center gap-2 text-white/90 hover:text-white transition-colors"
+              >
+                <Mail className="h-3.5 w-3.5" />
+                <span className="text-xs font-medium">queries@ethostowing.com</span>
+              </a>
+            </div>
             
-            <div className="h-8 w-px bg-secondary-foreground/20 hidden lg:block" />
-            
+            {/* Mobile Call Button */}
             <Button
               size="lg"
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all group"
+              className="md:hidden bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all group"
               asChild
             >
               <a href="tel:559-944-8178" className="flex items-center gap-2">
                 <Phone className="h-4 w-4 group-hover:rotate-12 transition-transform" />
-                <span className="hidden sm:inline">Call Now:</span>
-                <span>559-944-8178</span>
+                <span>Call Now</span>
+              </a>
+            </Button>
+            
+            {/* Desktop Call Button */}
+            <Button
+              size="lg"
+              className="hidden md:flex bg-primary hover:bg-primary/90 text-primary-foreground font-bold shadow-lg hover:shadow-xl transition-all group"
+              asChild
+            >
+              <a href="tel:559-944-8178" className="flex items-center gap-2">
+                <Phone className="h-4 w-4 group-hover:rotate-12 transition-transform" />
+                <span>Call Now</span>
               </a>
             </Button>
           </div>

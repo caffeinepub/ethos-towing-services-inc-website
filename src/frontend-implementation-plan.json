@@ -1,74 +1,64 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Replace company logo and favicon with new design",
+  "title": "Fix chatbot display, add email to header, update service distance to California-wide",
   "requirements": [
     {
-      "id": "REQ-68",
-      "summary": "Replace the current company logo in the Header component with the user-provided logo image featuring the shield design with tow truck, American flag 'ETHOS' text, and 'TOWING SERVICES' subtitle",
+      "id": "REQ-76",
+      "summary": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
       "acceptanceCriteria": [
-        "The Header component displays the new logo from the generated transparent logo file",
-        "The logo maintains proper dimensions and aspect ratio",
-        "The logo is visible and properly styled within the header layout"
+        "Bot responses appear correctly when user sends messages",
+        "Message panel displays all chatbot answers without layout issues",
+        "Chatbot conversation flow works smoothly without display errors"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Header.tsx",
+          "path": "frontend/src/components/Chatbot.tsx",
           "operation": "modify",
-          "description": "Update the logo src attribute to reference the generated transparent logo at frontend/public/assets/generated/ethos-logo-transparent.dim_400x400.png instead of the current logo. Ensure the img element maintains proper alt text, dimensions, and styling to display the new shield design with tow truck, American flag 'ETHOS' text, and 'TOWING SERVICES' subtitle."
-        }
-      ]
-    },
-    {
-      "id": "REQ-69",
-      "summary": "Replace the company logo in the Footer component with the user-provided logo image",
-      "acceptanceCriteria": [
-        "The Footer component displays the new logo from the generated transparent logo file",
-        "The logo is properly sized and positioned within the footer layout",
-        "The logo maintains visual consistency with the header logo"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Footer.tsx",
-          "operation": "modify",
-          "description": "Update the footer logo src attribute to reference the generated transparent logo at frontend/public/assets/generated/ethos-logo-transparent.dim_400x400.png. Ensure the logo maintains proper dimensions, alt text, and styling within the footer's four-column grid layout to match the header logo presentation."
-        }
-      ]
-    },
-    {
-      "id": "REQ-70",
-      "summary": "Update the website favicon to use the new company logo",
-      "acceptanceCriteria": [
-        "The favicon displays the new logo design in the browser tab",
-        "The favicon is properly sized (32x32 or appropriate dimensions)",
-        "The favicon is visible across all major browsers"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/index.html",
-          "operation": "modify",
-          "description": "Update the favicon link href attribute in the HTML head to reference the generated favicon at frontend/public/assets/generated/ethos-favicon.dim_32x32.png. The favicon should display the shield design with proper 32x32 dimensions for browser tab visibility."
-        }
-      ]
-    },
-    {
-      "id": "REQ-71",
-      "summary": "Ensure the new logo image has a transparent background, removing any white or solid color backgrounds around the shield design",
-      "acceptanceCriteria": [
-        "The logo displays with full transparency around all edges",
-        "No visible background artifacts or white boxes appear around the logo",
-        "The logo integrates seamlessly with the header and footer backgrounds"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Header.tsx",
-          "operation": "modify",
-          "description": "Verify that the Header component references the transparent logo file frontend/public/assets/generated/ethos-logo-transparent.dim_400x400.png and does not apply any background styles that would interfere with transparency. Ensure the logo integrates seamlessly with the header background without visible white boxes or artifacts."
+          "description": "Fix the chatbot message display rendering to ensure bot responses are properly shown in the message panel. Review the message rendering logic, scroll behavior, and any conditional rendering that may prevent bot messages from displaying. Ensure the message list correctly renders both user and bot messages with appropriate styling and layout."
         },
         {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/src/hooks/useChatbot.ts",
           "operation": "modify",
-          "description": "Verify that the Footer component references the transparent logo file frontend/public/assets/generated/ethos-logo-transparent.dim_400x400.png and does not apply any background styles that would interfere with transparency. Ensure the logo integrates seamlessly with the footer background without visible artifacts."
+          "description": "Review and fix the message state management to ensure bot responses are correctly added to the messages array and trigger re-renders. Verify that the sendMessage function properly adds both user messages and corresponding bot responses to the state without timing or state update issues."
+        }
+      ]
+    },
+    {
+      "id": "REQ-77",
+      "summary": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
+      "acceptanceCriteria": [
+        "Email address 'queries@ethostowing.com' is visible in the Header component",
+        "Email is positioned directly under or adjacent to the phone number",
+        "Email styling is consistent with the header design and maintains white text color"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Header.tsx",
+          "operation": "modify",
+          "description": "Add the email address 'queries@ethostowing.com' to the Header component positioned under or adjacent to the existing phone number '559-944-8178'. Ensure the email is styled consistently with white text color to match the header design. Implement the email as a mailto: link for user convenience while maintaining the header's existing layout structure and backdrop blur effects."
+        }
+      ]
+    },
+    {
+      "id": "REQ-78",
+      "summary": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
+      "acceptanceCriteria": [
+        "All instances of '400 miles' or 'up to 400 miles' are replaced with 'entire California state'",
+        "Services section reflects California-wide coverage for long distance towing",
+        "ServiceArea component description updated to reflect California state coverage",
+        "No remaining references to 400-mile limit exist in the application"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/Services.tsx",
+          "operation": "modify",
+          "description": "Update the long-distance towing service description to replace any reference to '400 miles' or 'up to 400 miles' with 'entire California state'. Review the service card content for long-distance/long haul towing and ensure the updated coverage area is accurately reflected in the description text."
+        },
+        {
+          "path": "frontend/src/components/ServiceArea.tsx",
+          "operation": "modify",
+          "description": "Update the service coverage description to replace references to '400 miles' or '200-400 mile radius' with 'entire California state' for long haul services. Ensure the primary coverage area for Fresno/Central Valley remains intact while updating the extended coverage description to reflect California-wide service availability."
         }
       ]
     }

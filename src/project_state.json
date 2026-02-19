@@ -1,17 +1,17 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 33,
-  "summary": "Professional website for Ethos Towing Services INC, a towing company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation",
+  "projectStateVersion": 37,
+  "summary": "Professional website for Ethos Towing Services INC, a towing company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website will include an integrated chatbot for customer interaction.",
   "architectural_notes": [
     "Website type: Professional service business website for towing company",
     "Target audience: Customers needing towing services in Fresno, CA area",
     "Color scheme: Red, white, and blue as primary colors",
     "Design emphasis: Full authority, professional, modern aesthetic",
-    "Navigation: Easy, intuitive user experience is primary goal"
+    "Navigation: Easy, intuitive user experience is primary goal",
+    "Chatbot integration: Will need to add customer interaction chat functionality to the website"
   ],
   "known_issues": [],
-  "isFixRequest": false,
-  "imageRequirements": "## Required Images\n- Company logo with shield design, tow truck illustration, American flag-styled 'ETHOS' text, and 'TOWING SERVICES' subtitle with transparent background for use in header and footer (ethos-logo-new.dim_400x400.png)\n\n## Edit Images\n- Remove white background and ensure full transparency around shield edges (mii.png > ethos-logo-transparent.dim_400x400.png)",
+  "isFixRequest": true,
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-displaying-ethos-towing-services-inc-as-the-company-name-tagline-highlighting-experienced-towing-services-and-location-in-fresno-california",
@@ -565,6 +565,62 @@
         "REQ-71"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-create-a-chatbot-component-that-can-be-accessed-from-any-page-of-the-website-providing-customer-interaction-capabilities-for-answering-common-questions-about-towing-services-pricing-service-area-and-availability",
+      "title": "Create a chatbot component that can be accessed from any page of the website, providing customer interaction capabilities for answering common questions about towing services, pricing, service area, and availability",
+      "reqIds": [
+        "REQ-72"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-implement-chatbot-message-history-and-conversation-state-management-to-maintain-context-during-customer-interactions",
+      "title": "Implement chatbot message history and conversation state management to maintain context during customer interactions",
+      "reqIds": [
+        "REQ-73"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-chatbot-integration-to-the-main-app-component-ensuring-it-is-available-throughout-the-application-without-interfering-with-existing-navigation-or-layout",
+      "title": "Add chatbot integration to the main App component ensuring it is available throughout the application without interfering with existing navigation or layout",
+      "reqIds": [
+        "REQ-74"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-configure-chatbot-with-predefined-responses-for-common-towing-service-inquiries-including-service-types-pricing-information-service-area-coverage-availability-24-7-and-how-to-request-service",
+      "title": "Configure chatbot with predefined responses for common towing service inquiries including service types, pricing information, service area coverage, availability (24/7), and how to request service",
+      "reqIds": [
+        "REQ-75"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-fix-the-chatbot-answer-display-issue-so-that-bot-responses-open-and-display-properly-when-users-interact-with-the-chatbot-component",
+      "title": "Fix the chatbot answer display issue so that bot responses open and display properly when users interact with the chatbot component",
+      "reqIds": [
+        "REQ-76"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-email-address-queries-ethostowing-com-displayed-prominently-under-the-phone-number-559-944-8178-in-the-header-component-at-the-top-of-the-website",
+      "title": "Add the email address 'queries@ethostowing.com' displayed prominently under the phone number '559-944-8178' in the Header component at the top of the website",
+      "reqIds": [
+        "REQ-77"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-all-references-to-long-haul-distance-service-from-up-to-400-miles-to-entire-california-state-throughout-the-website-including-services-component-servicearea-component-and-any-other-locations-where-this-distance-is-mentioned",
+      "title": "Update all references to long haul distance service from 'up to 400 miles' to 'entire California state' throughout the website, including Services component, ServiceArea component, and any other locations where this distance is mentioned",
+      "reqIds": [
+        "REQ-78"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -663,6 +719,30 @@
     {
       "id": "AR-23",
       "summary": "Make the map pin smaller, change label from 'operation hub' to 'Fresno, CA.', and increase map size to be more centered/symmetrical",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-24",
+      "summary": "Integrate a chatbot into the website for customer interaction",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-25",
+      "summary": "Fix chatbot answers not opening/displaying properly",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-26",
+      "summary": "Add email ID display under the phone number at the top of the website",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-27",
+      "summary": "Change long haul distance from 'up to 400 miles' to 'entire California state' wherever mentioned in the website",
       "reqIds": [],
       "status": "pending"
     }
