@@ -1,0 +1,674 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 33,
+  "summary": "Professional website for Ethos Towing Services INC, a towing company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation",
+  "architectural_notes": [
+    "Website type: Professional service business website for towing company",
+    "Target audience: Customers needing towing services in Fresno, CA area",
+    "Color scheme: Red, white, and blue as primary colors",
+    "Design emphasis: Full authority, professional, modern aesthetic",
+    "Navigation: Easy, intuitive user experience is primary goal"
+  ],
+  "known_issues": [],
+  "isFixRequest": false,
+  "imageRequirements": "## Required Images\n- Company logo with shield design, tow truck illustration, American flag-styled 'ETHOS' text, and 'TOWING SERVICES' subtitle with transparent background for use in header and footer (ethos-logo-new.dim_400x400.png)\n\n## Edit Images\n- Remove white background and ensure full transparency around shield edges (mii.png > ethos-logo-transparent.dim_400x400.png)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-hero-section-displaying-ethos-towing-services-inc-as-the-company-name-tagline-highlighting-experienced-towing-services-and-location-in-fresno-california",
+      "title": "Create a hero section displaying 'Ethos Towing Services INC' as the company name, tagline highlighting experienced towing services, and location in Fresno, California",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-service-area-coverage-information-showing-200-400-miles-radius-from-fresno-for-special-requests",
+      "title": "Display service area coverage information showing 200-400 miles radius from Fresno for special requests",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-services-overview-section-listing-common-towing-services-offered-e-g-emergency-towing-long-distance-towing-roadside-assistance-vehicle-recovery",
+      "title": "Create a services overview section listing common towing services offered (e.g., emergency towing, long-distance towing, roadside assistance, vehicle recovery)",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-build-a-contact-form-allowing-customers-to-request-towing-services-with-fields-for-name-phone-number-location-vehicle-type-and-service-details",
+      "title": "Build a contact form allowing customers to request towing services with fields for name, phone number, location, vehicle type, and service details",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-an-about-us-or-our-team-section-highlighting-the-experienced-team-and-company-credentials",
+      "title": "Create an 'About Us' or 'Our Team' section highlighting the experienced team and company credentials",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-prominent-contact-information-including-phone-number-and-email-for-emergency-towing-requests",
+      "title": "Display prominent contact information including phone number and email for emergency towing requests",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-a-professional-trustworthy-visual-theme-using-automotive-industry-appropriate-colors-avoid-blue-and-purple-incorporating-bold-typography-and-clean-layouts-that-convey-reliability-and-emergency-readiness",
+      "title": "Design a professional, trustworthy visual theme using automotive industry-appropriate colors (avoid blue and purple), incorporating bold typography and clean layouts that convey reliability and emergency readiness",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-mentions-of-newly-established-business-from-the-about-section-and-rephrase-to-emphasize-the-experienced-team-and-established-credentials-without-referencing-company-age",
+      "title": "Remove all mentions of 'newly established business' from the About section and rephrase to emphasize the experienced team and established credentials without referencing company age",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-main-hero-section-background-image-with-a-new-professional-tow-truck-photo",
+      "title": "Replace the main hero section background image with a new professional tow truck photo",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-typography-system-to-improve-font-choices-across-the-entire-application-for-better-visual-harmony-and-readability",
+      "title": "Update typography system to improve font choices across the entire application for better visual harmony and readability",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-improve-color-contrast-and-visibility-throughout-the-application-to-ensure-all-text-and-ui-elements-are-clearly-readable",
+      "title": "Improve color contrast and visibility throughout the application to ensure all text and UI elements are clearly readable",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-all-photographic-background-images-from-the-hero-section-and-replace-with-abstract-modern-art-or-geometric-patterns-that-convey-automotive-service-professionalism",
+      "title": "Remove all photographic background images from the Hero section and replace with abstract modern art or geometric patterns that convey automotive service professionalism",
+      "reqIds": [
+        "REQ-12"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-map-image-from-the-servicearea-component-and-replace-with-modern-art-or-abstract-representation-of-geographic-coverage",
+      "title": "Remove the map image from the ServiceArea component and replace with modern art or abstract representation of geographic coverage",
+      "reqIds": [
+        "REQ-13"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-global-color-scheme-throughout-the-application-to-align-with-a-modern-art-aesthetic-while-maintaining-automotive-industry-appropriateness-and-avoiding-blue-and-purple",
+      "title": "Update the global color scheme throughout the application to align with a modern art aesthetic while maintaining automotive industry appropriateness and avoiding blue and purple",
+      "reqIds": [
+        "REQ-14"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-icon-imagery-in-the-about-and-services-sections-with-modern-art-inspired-iconography-or-abstract-symbols",
+      "title": "Replace icon imagery in the About and Services sections with modern art-inspired iconography or abstract symbols",
+      "reqIds": [
+        "REQ-15"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-design-and-implement-a-bold-distinctive-visual-identity-for-the-entire-website-with-a-cohesive-modern-design-system-including-new-color-palette-avoiding-blue-and-purple-typography-hierarchy-spacing-scales-and-visual-language-that-conveys-professionalism-and-trust-in-the-automotive-towing-industry",
+      "title": "Design and implement a bold, distinctive visual identity for the entire website with a cohesive modern design system including new color palette (avoiding blue and purple), typography hierarchy, spacing scales, and visual language that conveys professionalism and trust in the automotive towing industry",
+      "reqIds": [
+        "REQ-16"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-hero-section-with-a-fresh-layout-approach-new-visual-treatment-for-the-headline-and-tagline-reimagined-background-design-and-updated-call-to-action-button-styling-that-aligns-with-the-new-design-system",
+      "title": "Redesign the Hero section with a fresh layout approach, new visual treatment for the headline and tagline, reimagined background design, and updated call-to-action button styling that aligns with the new design system",
+      "reqIds": [
+        "REQ-17"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-services-section-with-a-new-grid-or-card-layout-fresh-iconography-or-visual-representations-for-each-service-type-and-updated-styling-that-better-showcases-the-six-towing-services-offered",
+      "title": "Redesign the Services section with a new grid or card layout, fresh iconography or visual representations for each service type, and updated styling that better showcases the six towing services offered",
+      "reqIds": [
+        "REQ-18"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-about-section-with-a-new-layout-approach-updated-feature-card-designs-for-the-four-key-attributes-experienced-team-24-7-availability-licensed-insured-professional-service-and-fresh-visual-treatment-that-builds-trust-and-credibility",
+      "title": "Redesign the About section with a new layout approach, updated feature card designs for the four key attributes (experienced team, 24/7 availability, licensed/insured, professional service), and fresh visual treatment that builds trust and credibility",
+      "reqIds": [
+        "REQ-19"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-service-area-section-with-a-new-visual-approach-for-displaying-the-fresno-coverage-area-and-200-400-mile-radius-replacing-the-current-map-representation-with-a-fresh-design-treatment",
+      "title": "Redesign the Service Area section with a new visual approach for displaying the Fresno coverage area and 200-400 mile radius, replacing the current map representation with a fresh design treatment",
+      "reqIds": [
+        "REQ-20"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-contact-form-with-updated-input-field-styling-form-layout-button-design-and-overall-visual-treatment-that-encourages-form-completion-while-maintaining-accessibility-and-usability",
+      "title": "Redesign the Contact Form with updated input field styling, form layout, button design, and overall visual treatment that encourages form completion while maintaining accessibility and usability",
+      "reqIds": [
+        "REQ-21"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-header-component-with-a-new-layout-updated-logo-treatment-fresh-styling-for-contact-information-display-and-improved-visual-hierarchy-that-works-across-all-screen-sizes",
+      "title": "Redesign the Header component with a new layout, updated logo treatment, fresh styling for contact information display, and improved visual hierarchy that works across all screen sizes",
+      "reqIds": [
+        "REQ-22"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-footer-component-with-updated-layout-new-styling-for-contact-details-and-business-hours-and-fresh-visual-treatment-for-social-media-links-and-attribution-information",
+      "title": "Redesign the Footer component with updated layout, new styling for contact details and business hours, and fresh visual treatment for social media links and attribution information",
+      "reqIds": [
+        "REQ-23"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-global-styling-in-index-css-and-tailwind-config-js-to-reflect-the-new-design-system-including-color-tokens-typography-scales-spacing-values-and-any-other-design-tokens-needed-for-the-redesign",
+      "title": "Update the global styling in index.css and tailwind.config.js to reflect the new design system, including color tokens, typography scales, spacing values, and any other design tokens needed for the redesign",
+      "reqIds": [
+        "REQ-24"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-entire-application-with-a-professional-timeless-design-system-using-red-white-and-blue-as-the-primary-color-palette-replacing-all-existing-color-tokens-in-tailwind-config-js-and-index-css",
+      "title": "Redesign the entire application with a professional, timeless design system using red, white, and blue as the primary color palette, replacing all existing color tokens in tailwind.config.js and index.css",
+      "reqIds": [
+        "REQ-25"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-hero-component-with-a-completely-new-layout-typography-treatment-and-visual-hierarchy-optimized-for-easy-navigation-and-professional-presentation-using-the-red-white-and-blue-color-scheme",
+      "title": "Redesign the Hero component with a completely new layout, typography treatment, and visual hierarchy optimized for easy navigation and professional presentation using the red, white, and blue color scheme",
+      "reqIds": [
+        "REQ-26"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-header-component-with-a-professional-authoritative-layout-using-red-white-and-blue-colors-ensuring-clear-navigation-and-prominent-display-of-contact-information",
+      "title": "Redesign the Header component with a professional, authoritative layout using red, white, and blue colors, ensuring clear navigation and prominent display of contact information",
+      "reqIds": [
+        "REQ-27"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-services-component-with-a-completely-new-layout-and-styling-using-red-white-and-blue-colors-presenting-the-six-towing-services-in-a-professional-easily-navigable-grid-or-card-format",
+      "title": "Redesign the Services component with a completely new layout and styling using red, white, and blue colors, presenting the six towing services in a professional, easily navigable grid or card format",
+      "reqIds": [
+        "REQ-28"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-about-component-with-a-new-professional-layout-using-red-white-and-blue-colors-showcasing-the-four-key-attributes-experienced-team-24-7-availability-licensed-insured-professional-service-with-authoritative-visual-treatment",
+      "title": "Redesign the About component with a new professional layout using red, white, and blue colors, showcasing the four key attributes (experienced team, 24/7 availability, licensed/insured, professional service) with authoritative visual treatment",
+      "reqIds": [
+        "REQ-29"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-servicearea-component-with-a-new-visual-approach-using-red-white-and-blue-colors-presenting-the-fresno-coverage-area-and-200-400-mile-radius-information-in-a-professional-authoritative-manner",
+      "title": "Redesign the ServiceArea component with a new visual approach using red, white, and blue colors, presenting the Fresno coverage area and 200-400 mile radius information in a professional, authoritative manner",
+      "reqIds": [
+        "REQ-30"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-contactform-component-with-completely-new-styling-using-red-white-and-blue-colors-optimizing-form-layout-input-fields-and-button-design-for-easy-navigation-and-professional-appearance",
+      "title": "Redesign the ContactForm component with completely new styling using red, white, and blue colors, optimizing form layout, input fields, and button design for easy navigation and professional appearance",
+      "reqIds": [
+        "REQ-31"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-redesign-the-footer-component-with-a-new-layout-and-styling-using-red-white-and-blue-colors-presenting-contact-details-business-hours-social-media-links-and-attribution-information-in-a-professional-timeless-manner",
+      "title": "Redesign the Footer component with a new layout and styling using red, white, and blue colors, presenting contact details, business hours, social media links, and attribution information in a professional, timeless manner",
+      "reqIds": [
+        "REQ-32"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-typography-system-throughout-the-application-to-support-the-new-professional-timeless-design-selecting-font-families-weights-and-sizes-that-convey-authority-and-ensure-easy-navigation",
+      "title": "Update typography system throughout the application to support the new professional, timeless design, selecting font families, weights, and sizes that convey authority and ensure easy navigation",
+      "reqIds": [
+        "REQ-33"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-navigation-elements-interactive-components-and-page-sections-are-designed-for-optimal-usability-and-intuitive-navigation-throughout-the-redesigned-application",
+      "title": "Ensure all navigation elements, interactive components, and page sections are designed for optimal usability and intuitive navigation throughout the redesigned application",
+      "reqIds": [
+        "REQ-34"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-entire-design-system-in-tailwind-config-js-with-a-completely-new-modern-professional-color-palette-spacing-scale-typography-system-and-design-tokens-that-convey-authority-and-ensure-intuitive-navigation",
+      "title": "Replace the entire design system in tailwind.config.js with a completely new modern professional color palette, spacing scale, typography system, and design tokens that convey authority and ensure intuitive navigation",
+      "reqIds": [
+        "REQ-35"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-index-css-with-new-css-variables-and-global-styles-that-support-the-completely-new-design-system-replacing-all-existing-theme-tokens",
+      "title": "Update index.css with new CSS variables and global styles that support the completely new design system, replacing all existing theme tokens",
+      "reqIds": [
+        "REQ-36"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-header-component-with-a-new-modern-layout-structure-navigation-approach-logo-treatment-and-contact-information-presentation-that-projects-authority-and-improves-navigation",
+      "title": "Completely redesign the Header component with a new modern layout structure, navigation approach, logo treatment, and contact information presentation that projects authority and improves navigation",
+      "reqIds": [
+        "REQ-37"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-hero-component-with-a-new-modern-layout-innovative-visual-treatment-for-headlines-and-call-to-action-elements-and-authoritative-presentation-that-facilitates-easy-navigation-to-key-actions",
+      "title": "Completely redesign the Hero component with a new modern layout, innovative visual treatment for headlines and call-to-action elements, and authoritative presentation that facilitates easy navigation to key actions",
+      "reqIds": [
+        "REQ-38"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-services-component-with-a-new-modern-grid-or-layout-system-fresh-visual-presentation-for-the-six-service-types-and-professional-styling-that-makes-service-information-easy-to-scan-and-navigate",
+      "title": "Completely redesign the Services component with a new modern grid or layout system, fresh visual presentation for the six service types, and professional styling that makes service information easy to scan and navigate",
+      "reqIds": [
+        "REQ-39"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-about-component-with-a-new-modern-layout-for-showcasing-the-four-key-attributes-experienced-team-24-7-availability-licensed-insured-professional-service-using-authoritative-visual-treatment-and-improved-navigation",
+      "title": "Completely redesign the About component with a new modern layout for showcasing the four key attributes (experienced team, 24/7 availability, licensed/insured, professional service) using authoritative visual treatment and improved navigation",
+      "reqIds": [
+        "REQ-40"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-servicearea-component-with-a-new-modern-visual-approach-for-presenting-fresno-coverage-and-200-400-mile-radius-information-with-authoritative-styling-and-clear-navigation",
+      "title": "Completely redesign the ServiceArea component with a new modern visual approach for presenting Fresno coverage and 200-400 mile radius information with authoritative styling and clear navigation",
+      "reqIds": [
+        "REQ-41"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-contactform-component-with-a-new-modern-form-layout-input-field-styling-button-design-and-overall-visual-treatment-that-projects-authority-while-optimizing-for-easy-form-completion-and-navigation",
+      "title": "Completely redesign the ContactForm component with a new modern form layout, input field styling, button design, and overall visual treatment that projects authority while optimizing for easy form completion and navigation",
+      "reqIds": [
+        "REQ-42"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-completely-redesign-the-footer-component-with-a-new-modern-layout-for-displaying-contact-details-business-hours-social-media-links-and-attribution-with-authoritative-professional-styling",
+      "title": "Completely redesign the Footer component with a new modern layout for displaying contact details, business hours, social media links, and attribution with authoritative professional styling",
+      "reqIds": [
+        "REQ-43"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-all-interactive-elements-navigation-patterns-and-page-sections-throughout-the-application-support-intuitive-user-flows-with-clear-visual-feedback-proper-focus-states-and-accessibility-features-that-facilitate-easy-navigation",
+      "title": "Ensure all interactive elements, navigation patterns, and page sections throughout the application support intuitive user flows with clear visual feedback, proper focus states, and accessibility features that facilitate easy navigation",
+      "reqIds": [
+        "REQ-44"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-professional-reliable-24-7-text-color-in-the-header-component-to-white",
+      "title": "Change the 'PROFESSIONAL • RELIABLE • 24/7' text color in the Header component to white",
+      "reqIds": [
+        "REQ-45"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-email-icon-and-support-ethostowing-com-text-color-in-the-header-component-to-white",
+      "title": "Change the email icon and 'support@ethostowing.com' text color in the Header component to white",
+      "reqIds": [
+        "REQ-46"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-text-color-of-fast-reliable-towing-and-roadside-assistance-serving-fresno-and-the-central-valley-in-the-hero-component-to-white",
+      "title": "Change the text color of 'Fast, reliable towing and roadside assistance serving Fresno and the Central Valley' in the Hero component to white",
+      "reqIds": [
+        "REQ-47"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-text-color-of-expert-service-modern-equipment-competitive-rates-in-the-hero-component-to-white",
+      "title": "Change the text color of 'Expert service • Modern equipment • Competitive rates' in the Hero component to white",
+      "reqIds": [
+        "REQ-48"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-abstract-art-in-the-servicearea-component-with-a-realistic-map-of-fresno-california-showing-proper-geographic-outlines-with-a-darker-200-mile-radius-circle-from-the-center-and-a-lighter-400-mile-radius-circle",
+      "title": "Replace the abstract art in the ServiceArea component with a realistic map of Fresno, California showing proper geographic outlines with a darker 200-mile radius circle from the center and a lighter 400-mile radius circle",
+      "reqIds": [
+        "REQ-49"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-drop-location-input-field-in-the-contactform-component-positioned-below-the-current-location-field-to-enable-better-cost-estimate-calculations",
+      "title": "Add a 'Drop Location' input field in the ContactForm component positioned below the 'Current Location' field to enable better cost estimate calculations",
+      "reqIds": [
+        "REQ-50"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-service-area-map-in-the-servicearea-component-with-an-apple-maps-screenshot-of-fresno-showing-a-darker-200-mile-radius-outline-from-the-center-and-a-lighter-400-mile-radius-outline",
+      "title": "Replace the service area map in the ServiceArea component with an Apple Maps screenshot of Fresno showing a darker 200-mile radius outline from the center and a lighter 400-mile radius outline",
+      "reqIds": [
+        "REQ-52"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-all-instances-of-support-ethostowing-com-to-queries-ethostowing-com-throughout-the-entire-application",
+      "title": "Change all instances of 'support@ethostowing.com' to 'queries@ethostowing.com' throughout the entire application",
+      "reqIds": [
+        "REQ-53"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-contact-phone-number-to-559-944-8178-everywhere-it-appears-in-the-application",
+      "title": "Update the contact phone number to '559-944-8178' everywhere it appears in the application",
+      "reqIds": [
+        "REQ-54"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-all-references-of-john-doe-to-john-smith-throughout-the-application",
+      "title": "Change all references of 'John Doe' to 'John Smith' throughout the application",
+      "reqIds": [
+        "REQ-55"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-service-area-map-visual-in-the-servicearea-component-with-a-zoomed-in-google-maps-screenshot-of-fresno-california-featuring-a-prominent-red-pin-marking-fresno-as-the-operations-hub",
+      "title": "Replace the service area map visual in the ServiceArea component with a zoomed-in Google Maps screenshot of Fresno, California featuring a prominent red pin marking Fresno as the operations hub",
+      "reqIds": [
+        "REQ-56"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-reduce-the-size-of-the-red-pin-marker-in-the-servicearea-component-s-map-visual-to-make-it-smaller-and-less-prominent-while-keeping-it-visible",
+      "title": "Reduce the size of the red pin marker in the ServiceArea component's map visual to make it smaller and less prominent while keeping it visible",
+      "reqIds": [
+        "REQ-57"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-change-the-text-label-associated-with-the-map-pin-from-operation-hub-to-fresno-ca-in-the-servicearea-component",
+      "title": "Change the text label associated with the map pin from 'operation hub' to 'Fresno, CA.' in the ServiceArea component",
+      "reqIds": [
+        "REQ-58",
+        "REQ-63"
+      ],
+      "version": 2
+    },
+    {
+      "id": "feature-increase-the-dimensions-of-the-map-display-in-the-servicearea-component-to-make-it-bigger-and-more-centered-symmetrical-within-its-container",
+      "title": "Increase the dimensions of the map display in the ServiceArea component to make it bigger and more centered/symmetrical within its container",
+      "reqIds": [
+        "REQ-59"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-center-the-map-display-horizontally-and-vertically-within-the-servicearea-component-container-ensuring-symmetric-spacing-on-all-sides",
+      "title": "Center the map display horizontally and vertically within the ServiceArea component container, ensuring symmetric spacing on all sides",
+      "reqIds": [
+        "REQ-60"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-dimensions-of-the-map-display-in-the-servicearea-component-to-make-it-significantly-larger-than-the-current-size",
+      "title": "Increase the dimensions of the map display in the ServiceArea component to make it significantly larger than the current size",
+      "reqIds": [
+        "REQ-61"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-reduce-the-size-of-the-red-pin-marker-on-the-map-to-make-it-smaller-and-less-prominent-while-keeping-it-visible",
+      "title": "Reduce the size of the red pin marker on the map to make it smaller and less prominent while keeping it visible",
+      "reqIds": [
+        "REQ-62"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-ethos-towing-services-logo-in-the-header-component-with-the-user-provided-logo-image-whatsapp-image-2026-02-20-at-1-16-48-am-jpeg-featuring-the-tow-truck-shield-design-with-american-flag-ethos-text-and-towing-services-subtitle",
+      "title": "Replace the current Ethos Towing Services logo in the Header component with the user-provided logo image (WhatsApp Image 2026-02-20 at 1.16.48 AM.jpeg) featuring the tow truck shield design with American flag 'ETHOS' text and 'TOWING SERVICES' subtitle",
+      "reqIds": [
+        "REQ-64"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-black-background-from-the-company-logo-image-ensuring-transparency-around-all-edges-of-the-tow-truck-shield-design",
+      "title": "Remove the black background from the company logo image, ensuring transparency around all edges of the tow truck shield design",
+      "reqIds": [
+        "REQ-65"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-the-company-logo-consistently-throughout-the-website-in-all-locations-where-brand-logos-are-presented-including-header-component-footer-component-and-any-other-branding-touchpoints",
+      "title": "Apply the company logo consistently throughout the website in all locations where brand logos are presented, including Header component, Footer component, and any other branding touchpoints",
+      "reqIds": [
+        "REQ-66"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-website-favicon-to-use-the-company-logo-with-transparent-background",
+      "title": "Update the website favicon to use the company logo with transparent background",
+      "reqIds": [
+        "REQ-67"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-current-company-logo-in-the-header-component-with-the-user-provided-logo-image-mii-png-featuring-the-shield-design-with-tow-truck-american-flag-ethos-text-and-towing-services-subtitle",
+      "title": "Replace the current company logo in the Header component with the user-provided logo image (mii.png) featuring the shield design with tow truck, American flag 'ETHOS' text, and 'TOWING SERVICES' subtitle",
+      "reqIds": [
+        "REQ-68"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-company-logo-in-the-footer-component-with-the-user-provided-logo-image-mii-png",
+      "title": "Replace the company logo in the Footer component with the user-provided logo image (mii.png)",
+      "reqIds": [
+        "REQ-69"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-website-favicon-in-frontend-index-html-to-use-the-new-company-logo-from-mii-png",
+      "title": "Update the website favicon in frontend/index.html to use the new company logo from mii.png",
+      "reqIds": [
+        "REQ-70"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-ensure-the-new-logo-image-has-a-transparent-background-removing-any-white-or-solid-color-backgrounds-around-the-shield-design",
+      "title": "Ensure the new logo image has a transparent background, removing any white or solid color backgrounds around the shield design",
+      "reqIds": [
+        "REQ-71"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Create company information section highlighting Ethos Towing Services INC, location in Fresno, CA, and service radius of 200-400 miles",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add service request form or contact mechanism for customers to request towing services",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Showcase experienced team credentials and expertise",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Remove 'newly established business' mentions and rephrase about company experience",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Improve font choices and color visibility/contrast for better readability",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-7",
+      "summary": "Replace photography with modern art and update color scheme throughout the site",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-10",
+      "summary": "Completely redesign the entire application with a fresh professional, modern, authoritative design system emphasizing full authority and easy navigation",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-11",
+      "summary": "Change 'Fast, reliable towing and roadside assistance serving Fresno and the Central Valley' text color to white",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-12",
+      "summary": "Change 'Expert service • Modern equipment • Competitive rates' text color to white",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-14",
+      "summary": "Add 'Drop Location' field below 'Current Location' in contact form for better cost estimates",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-17",
+      "summary": "Update the TowingRequest type in backend/main.mo to include a dropLocation field as optional Text to store destination information for cost estimation",
+      "reqIds": [
+        "REQ-51"
+      ],
+      "status": "pending"
+    },
+    {
+      "id": "AR-19",
+      "summary": "Change all instances of support@ethostowing.com to queries@ethostowing.com throughout the application",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-20",
+      "summary": "Update contact phone number to 559-944-8178 everywhere it appears in the application",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-21",
+      "summary": "Change all references of 'John Doe' to 'John Smith' throughout the application",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-22",
+      "summary": "Replace service area map with zoomed-in Google Maps screenshot of Fresno with a big red pin highlighting Fresno as operations hub",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-23",
+      "summary": "Make the map pin smaller, change label from 'operation hub' to 'Fresno, CA.', and increase map size to be more centered/symmetrical",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Ethos Towing Services INC Website",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

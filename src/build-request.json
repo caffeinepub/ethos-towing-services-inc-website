@@ -1,0 +1,95 @@
+{
+  "kind": "build_request",
+  "title": "Replace company logo and favicon with new design",
+  "projectName": "Ethos Towing Services",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-68",
+      "text": "Replace the current company logo in the Header component with the user-provided logo image (mii.png) featuring the shield design with tow truck, American flag 'ETHOS' text, and 'TOWING SERVICES' subtitle",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "replace the logos with this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Header component displays the new logo from mii.png",
+        "The logo maintains proper dimensions and aspect ratio",
+        "The logo is visible and properly styled within the header layout"
+      ]
+    },
+    {
+      "id": "REQ-69",
+      "text": "Replace the company logo in the Footer component with the user-provided logo image (mii.png)",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "replace the logos with this"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The Footer component displays the new logo from mii.png",
+        "The logo is properly sized and positioned within the footer layout",
+        "The logo maintains visual consistency with the header logo"
+      ]
+    },
+    {
+      "id": "REQ-70",
+      "text": "Update the website favicon in frontend/index.html to use the new company logo from mii.png",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ],
+        "quotes": [
+          "also for favicon"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The favicon displays the new logo design in the browser tab",
+        "The favicon is properly sized (32x32 or appropriate dimensions)",
+        "The favicon is visible across all major browsers"
+      ]
+    },
+    {
+      "id": "REQ-71",
+      "text": "Ensure the new logo image has a transparent background, removing any white or solid color backgrounds around the shield design",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-latest"
+        ]
+      },
+      "acceptanceCriteria": [
+        "The logo displays with full transparency around all edges",
+        "No visible background artifacts or white boxes appear around the logo",
+        "The logo integrates seamlessly with the header and footer backgrounds"
+      ]
+    }
+  ],
+  "constraints": [
+    "Maintain existing logo positioning and layout structure in Header and Footer components",
+    "Preserve responsive behavior of logo elements across all screen sizes",
+    "Do not modify the single-actor backend architecture"
+  ],
+  "nonGoals": [
+    "Redesigning the header or footer layouts",
+    "Changing logo dimensions or aspect ratios beyond what's necessary for proper display",
+    "Modifying other branding elements or color schemes"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Company logo with shield design, tow truck illustration, American flag-styled 'ETHOS' text, and 'TOWING SERVICES' subtitle with transparent background for use in header and footer (ethos-logo-new.dim_400x400.png)"
+    ],
+    "edits": [
+      "Remove white background and ensure full transparency around shield edges (mii.png > ethos-logo-transparent.dim_400x400.png)"
+    ]
+  }
+}

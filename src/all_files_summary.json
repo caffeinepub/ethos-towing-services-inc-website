@@ -1,0 +1,22 @@
+{
+  "backend/main.mo": "Motoko actor defining TowingRequest type with comparison functions and public methods to submit, retrieve all, and get individual towing requests with validation.",
+  "feature_evidence.json": "Feature evidence report documenting four completed features for replacing company logos in Header, Footer, favicon, and ensuring transparent backgrounds using mii.png.",
+  "frontend-file-summaries.txt": "JSON-formatted summaries of all frontend files describing components, styling, and configuration with updated branding, contact details, and logo references.",
+  "frontend/index.css": "Tailwind CSS base layer defining CSS custom properties for light and dark themes using OKLCH color space with slate/charcoal and orange color system.",
+  "frontend/index.html": "HTML entry point with favicon link to mii.png logo and script tag loading the React application from main.tsx.",
+  "frontend/src/App.tsx": "Main React component rendering the full page layout with Header, Hero, About, Services, ServiceArea, ContactForm, Footer components and Toaster for notifications.",
+  "frontend/src/components/About.tsx": "About section component displaying four feature cards (Experienced Team, 24/7 Availability, Licensed & Insured, Professional Service) with icons, hover effects, and gradient backgrounds.",
+  "frontend/src/components/ContactForm.tsx": "Contact form component with validation, mutation hook for submitting towing requests including optional drop location field, and emergency contact cards with phone and email.",
+  "frontend/src/components/Footer.tsx": "Footer component with four-column grid layout displaying company logo from mii.png, contact details (queries@ethostowing.com, 559-944-8178), business hours, service links, and social media icons.",
+  "frontend/src/components/Header.tsx": "Sticky header component displaying the Ethos Towing logo, brand name, contact email, and a prominent call-to-action button with phone number (559-944-8178).",
+  "frontend/src/components/Hero.tsx": "Hero section with background image, trust badges (24/7 service, licensed & insured), large headline about professional towing, and two CTA buttons for requesting service or calling.",
+  "frontend/src/components/ServiceArea.tsx": "Service coverage section displaying primary service area (Fresno and Central Valley) and extended coverage (200-400 mile radius) with map pins and navigation icons.",
+  "frontend/src/components/Services.tsx": "Grid layout showcasing six towing services (emergency, long-distance, roadside assistance, vehicle recovery, flatbed, motorcycle) with icons, descriptions, and hover effects.",
+  "frontend/src/hooks/useActor.ts": "React Query hook that creates and manages the backend actor instance based on Internet Identity authentication state, invalidating dependent queries when the actor changes.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Context provider and hook for Internet Identity authentication, managing login/logout flow, identity state, and AuthClient creation with configurable options.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for fetching all towing requests (useGetAllRequests) and submitting new requests (useSubmitRequest) via the backend actor.",
+  "frontend/src/index.css": "Global CSS file importing Inter and Space Grotesk fonts, configuring Tailwind CSS, and defining CSS custom properties for light/dark themes using OKLCH color space with a slate and orange palette.",
+  "frontend/src/main.tsx": "Application entry point that renders the React app with QueryClient and InternetIdentityProvider wrappers for state management and authentication.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration extending the default theme with custom OKLCH-based color system, container settings, border radius variables, custom shadows, and typography/animation plugins.",
+  "project_state.json": "Project state document defining a professional towing company website (Ethos Towing Services INC) with red/white/blue color scheme, service area details, and a comprehensive list of implemented features including hero section, services, contact forms, and responsive design."
+}
