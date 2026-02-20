@@ -1,24 +1,134 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-20T05:30:08.772Z",
+  "generatedAt": "2026-02-20T06:21:44.620Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 1,
-    "implemented": 1,
+    "total": 11,
+    "implemented": 11,
     "items": [
       {
-        "id": "REQ-88",
-        "summary": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
+        "id": "REQ-100",
+        "summary": "Add a feature card for 'Emergency fuel and delivery' with an emergency gas delivery icon and description text 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.' with superscript ¹³ in the ETRMembership component",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/ETRMembership.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Footer.tsx"
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-101",
+        "summary": "Add a feature card for 'Lockout services' with a car keys icon and description text 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.' in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-102",
+        "summary": "Add a feature card for 'Member discounts' with an 'ETR card in hand' icon and description text 'Your ETR Membership is the key to saving you money on everyday purchases.' in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-103",
+        "summary": "Add a feature card for 'Expert automotive advice' with a mechanical first aid icon and description text 'We'll help you with all things automotive, from gas prices to winter driving.' in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-104",
+        "summary": "Integrate the ETRMembership component into the main App.tsx layout, positioning it after the Services component and before the ServiceArea component in the page flow",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/App.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/App.tsx"
+        ]
+      },
+      {
+        "id": "REQ-105",
+        "summary": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to include information about the ETR Everyday membership program when users ask about services, pricing, or membership options",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/utils/chatbotResponses.ts"
+        ],
+        "matchedFiles": [
+          "frontend/src/utils/chatbotResponses.ts"
+        ]
+      },
+      {
+        "id": "REQ-95",
+        "summary": "Create a new ETRMembership component in frontend/src/components/ETRMembership.tsx that displays the 'ETR Everyday' subscription membership program with the full name 'Ethos Towing & Recovery Everyday' and branded display name 'ETR Everyday'",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-96",
+        "summary": "Display the membership price of $110 prominently in the ETRMembership component with clear pricing presentation",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-97",
+        "summary": "Add a feature card for '24/7 roadside assistance' with the heading '247 service' and description text 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.' in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-98",
+        "summary": "Add a feature card for 'Mobile battery service' with an automotive battery icon and description text 'Don't get stranded. A battery boost or replacement is just a phone call away.' with superscript ¹¹ in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ]
+      },
+      {
+        "id": "REQ-99",
+        "summary": "Add a feature card for 'Flat tire service' with a tire icon and description text 'Got a flat? We'll install your spare tire so that you can get back on the road.' with superscript ¹² in the ETRMembership component",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/ETRMembership.tsx"
         ]
       }
     ]
@@ -28,7 +138,9 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/Footer.tsx",
+    "frontend/src/App.tsx",
+    "frontend/src/components/ETRMembership.tsx",
+    "frontend/src/utils/chatbotResponses.ts",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

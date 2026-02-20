@@ -1,21 +1,191 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Remove Caffeine.ai attribution from footer",
+  "title": "Add ETR Everyday subscription membership section",
   "requirements": [
     {
-      "id": "REQ-88",
-      "summary": "Remove the 'built with ♥ using caffeine.ai' attribution text from the Footer component",
+      "id": "REQ-95",
+      "summary": "Create ETRMembership component displaying 'Ethos Towing & Recovery Everyday' (branded as 'ETR Everyday') subscription program",
       "acceptanceCriteria": [
-        "The attribution text 'built with ♥ using caffeine.ai' is completely removed from the Footer component",
-        "The footer layout adjusts properly after the text removal without leaving empty space or layout issues",
-        "All other footer content (contact details, business hours, social media links, copyright notice) remains intact and properly displayed"
+        "Component is created at frontend/src/components/ETRMembership.tsx",
+        "Section displays both the full name 'Ethos Towing & Recovery Everyday' and the branded name 'ETR Everyday'",
+        "Component follows the existing design system with red, white, and blue color palette",
+        "Layout is responsive and works on mobile and desktop viewports"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Footer.tsx",
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "create",
+          "description": "Create a new React component that displays the ETR Everyday membership program. Use the same structural patterns as About.tsx and Services.tsx with a section wrapper, heading with gradient text effect, subheading describing the program, and a grid layout for feature cards. Apply the existing red, white, and blue color palette (--destructive, --primary, --background) and maintain responsive design with mobile-first approach. Include both the full name 'Ethos Towing & Recovery Everyday' and branded display name 'ETR Everyday' in the heading hierarchy. Use lucide-react icons for visual elements and apply gradient hover effects consistent with existing components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-96",
+      "summary": "Display membership price of $110 prominently in ETRMembership component",
+      "acceptanceCriteria": [
+        "Price of $110 is displayed prominently in the membership section",
+        "Pricing uses clear, readable typography consistent with the design system",
+        "Price presentation conveys value and authority"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
           "operation": "modify",
-          "description": "Remove the 'built with ♥ using caffeine.ai' attribution text from the Footer component while preserving all other footer content including contact details, business hours, quick links, social media icons, and copyright notice. Ensure the footer layout adjusts properly without leaving empty space or layout issues after the text removal."
+          "description": "Add a prominently styled pricing display showing $110 for the membership. Use large, bold typography with the existing color palette to emphasize the price point. Position the price near the top of the section after the heading and description, using a card or highlighted container to draw attention. Apply consistent spacing and alignment with the rest of the component."
+        }
+      ]
+    },
+    {
+      "id": "REQ-97",
+      "summary": "Add 24/7 roadside assistance feature card with '247 service' heading",
+      "acceptanceCriteria": [
+        "Feature card displays '247 service' as the heading",
+        "Card includes '24/7 roadside assistance' as the feature title with superscript ¹⁰",
+        "Description text matches: 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.'",
+        "Card includes an appropriate icon for 24/7 service",
+        "Styling is consistent with other feature cards in the section"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card to the grid with '247 service' as the heading, '24/7 roadside assistance' (with superscript ¹⁰) as the title, and description text 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.' Use the Clock icon from lucide-react or similar 24/7 availability icon. Apply the same card styling pattern as About.tsx feature cards with hover effects, padding, rounded corners, and gradient backgrounds."
+        }
+      ]
+    },
+    {
+      "id": "REQ-98",
+      "summary": "Add mobile battery service feature card with automotive battery icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Mobile battery service' as the title with superscript ¹¹",
+        "Card includes an automotive battery icon",
+        "Description text matches: 'Don't get stranded. A battery boost or replacement is just a phone call away.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Mobile battery service' as the title (with superscript ¹¹) and description 'Don't get stranded. A battery boost or replacement is just a phone call away.' Use the Battery or BatteryCharging icon from lucide-react. Maintain consistent styling with other feature cards including hover gradients, spacing, and color scheme."
+        }
+      ]
+    },
+    {
+      "id": "REQ-99",
+      "summary": "Add flat tire service feature card with tire icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Flat tire service' as the title with superscript ¹²",
+        "Card includes a tire icon",
+        "Description text matches: 'Got a flat? We'll install your spare tire so that you can get back on the road.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Flat tire service' as the title (with superscript ¹²) and description 'Got a flat? We'll install your spare tire so that you can get back on the road.' Use the Circle or Disc icon from lucide-react to represent a tire. Apply consistent card styling with gradient hover effects and proper spacing."
+        }
+      ]
+    },
+    {
+      "id": "REQ-100",
+      "summary": "Add emergency fuel delivery feature card with gas delivery icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Emergency fuel and delivery' as the title with superscript ¹³",
+        "Card includes an emergency gas delivery icon",
+        "Description text matches: 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Emergency fuel and delivery' as the title (with superscript ¹³) and description 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.' Use the Fuel or Droplet icon from lucide-react. Maintain visual consistency with other feature cards in styling and layout."
+        }
+      ]
+    },
+    {
+      "id": "REQ-101",
+      "summary": "Add lockout services feature card with car keys icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Lockout services' as the title",
+        "Card includes a car keys icon",
+        "Description text matches: 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Lockout services' as the title and description 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.' Use the Key or KeyRound icon from lucide-react. Apply the same styling patterns as other feature cards."
+        }
+      ]
+    },
+    {
+      "id": "REQ-102",
+      "summary": "Add member discounts feature card with membership card icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Member discounts' as the title",
+        "Card includes an 'ETR card in hand' icon or similar membership card icon",
+        "Description text matches: 'Your ETR Membership is the key to saving you money on everyday purchases.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Member discounts' as the title and description 'Your ETR Membership is the key to saving you money on everyday purchases.' Use the CreditCard or Wallet icon from lucide-react to represent a membership card. Maintain consistent styling with gradient hover effects."
+        }
+      ]
+    },
+    {
+      "id": "REQ-103",
+      "summary": "Add expert automotive advice feature card with mechanical assistance icon",
+      "acceptanceCriteria": [
+        "Feature card displays 'Expert automotive advice' as the title",
+        "Card includes a mechanical first aid icon or similar automotive assistance icon",
+        "Description text matches: 'We'll help you with all things automotive, from gas prices to winter driving.'",
+        "Icon and styling are consistent with other feature cards"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/ETRMembership.tsx",
+          "operation": "modify",
+          "description": "Add a feature card with 'Expert automotive advice' as the title and description 'We'll help you with all things automotive, from gas prices to winter driving.' Use the Wrench, Settings, or HelpCircle icon from lucide-react. Apply consistent card styling with proper spacing and hover effects."
+        }
+      ]
+    },
+    {
+      "id": "REQ-104",
+      "summary": "Integrate ETRMembership component into App.tsx between Services and ServiceArea",
+      "acceptanceCriteria": [
+        "ETRMembership component is imported in frontend/src/App.tsx",
+        "Component is rendered in the page layout after Services and before ServiceArea",
+        "Component displays correctly in the overall page flow without layout issues"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Import the ETRMembership component at the top of the file with other component imports. Add the <ETRMembership /> component to the JSX layout, positioning it after the <Services /> component and before the <ServiceArea /> component in the main return statement. Ensure proper spacing and no layout conflicts with surrounding components."
+        }
+      ]
+    },
+    {
+      "id": "REQ-105",
+      "summary": "Update chatbot responses to include ETR Everyday membership information",
+      "acceptanceCriteria": [
+        "Chatbot responses include ETR Everyday membership information when relevant",
+        "Responses mention the $110 membership price",
+        "Responses reference key benefits like 24/7 roadside assistance, battery service, flat tire service, fuel delivery, lockout services, member discounts, and expert advice",
+        "Chatbot can answer questions about membership features and pricing"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/utils/chatbotResponses.ts",
+          "operation": "modify",
+          "description": "Add new response patterns for membership-related queries. Include patterns matching keywords like 'membership', 'subscribe', 'etr everyday', 'member', 'subscription', 'plan', and 'price'. Create responses that mention the $110 ETR Everyday membership, describe the full name 'Ethos Towing & Recovery Everyday', and list the seven key benefits: 24/7 roadside assistance, mobile battery service, flat tire service, emergency fuel delivery, lockout services, member discounts, and expert automotive advice. Add suggestions that help users learn more about membership features or contact the company to sign up."
         }
       ]
     }

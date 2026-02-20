@@ -1,17 +1,19 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 45,
-  "summary": "Professional website for Ethos Towing & Recovery INC, a towing and recovery company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website includes an integrated chatbot for customer interaction and displays jump start services.",
+  "projectStateVersion": 51,
+  "summary": "Professional website for Ethos Towing & Recovery INC, a towing and recovery company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website includes an integrated chatbot for customer interaction, displays jump start services (integrated with vehicle recovery), and features an 'ETR Everyday' subscription membership program priced at $110 offering 24/7 roadside assistance, mobile battery service, flat tire service, emergency fuel delivery, lockout services, member discounts, and expert automotive advice.",
   "architectural_notes": [
     "Website type: Professional service business website for towing company",
     "Target audience: Customers needing towing services in Fresno, CA area",
     "Color scheme: Red, white, and blue as primary colors",
     "Design emphasis: Full authority, professional, modern aesthetic",
     "Navigation: Easy, intuitive user experience is primary goal",
-    "Chatbot integration: Will need to add customer interaction chat functionality to the website"
+    "Chatbot integration: Will need to add customer interaction chat functionality to the website",
+    "Subscription model: ETR Everyday membership at $110 with seven core benefits",
+    "Membership benefits: 24/7 roadside assistance, mobile battery service, flat tire service, emergency fuel delivery, lockout services, member discounts, and expert automotive advice"
   ],
   "known_issues": [],
-  "isFixRequest": true,
+  "isFixRequest": false,
   "existing_features": [
     {
       "id": "feature-create-a-hero-section-displaying-ethos-towing-services-inc-as-the-company-name-tagline-highlighting-experienced-towing-services-and-location-in-fresno-california",
@@ -701,6 +703,142 @@
         "REQ-88"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-update-the-chatbot-display-name-to-winchy-in-the-chatbot-component-frontend-src-components-chatbot-tsx-so-that-bot-messages-show-winchy-as-the-sender-name-instead-of-a-generic-label",
+      "title": "Update the chatbot display name to 'Winchy' in the Chatbot component (frontend/src/components/Chatbot.tsx) so that bot messages show 'Winchy' as the sender name instead of a generic label",
+      "reqIds": [
+        "REQ-89"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-replace-the-chatbot-toggle-button-icon-in-chatbottoggle-component-frontend-src-components-chatbottoggle-tsx-from-messagecircle-to-a-winch-or-hook-icon",
+      "title": "Replace the chatbot toggle button icon in ChatbotToggle component (frontend/src/components/ChatbotToggle.tsx) from MessageCircle to a winch or hook icon",
+      "reqIds": [
+        "REQ-90"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-chatbot-response-configuration-in-frontend-src-utils-chatbotresponses-ts-to-include-winchy-branding-in-bot-responses-where-appropriate-to-reinforce-the-chatbot-s-identity",
+      "title": "Update chatbot response configuration in frontend/src/utils/chatbotResponses.ts to include 'Winchy' branding in bot responses where appropriate to reinforce the chatbot's identity",
+      "reqIds": [
+        "REQ-91"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-revert-the-chatbot-toggle-button-icon-in-chatbottoggle-component-frontend-src-components-chatbottoggle-tsx-from-the-winch-hook-icon-back-to-the-messagecircle-icon-that-was-used-in-the-earlier-logo-scheme",
+      "title": "Revert the chatbot toggle button icon in ChatbotToggle component (frontend/src/components/ChatbotToggle.tsx) from the winch/hook icon back to the MessageCircle icon that was used in the earlier logo scheme",
+      "reqIds": [
+        "REQ-92"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-remove-the-winch-icon-from-the-chatbot-header-in-chatbot-component-frontend-src-components-chatbot-tsx-and-display-only-the-text-winchy-without-any-accompanying-icon-in-the-chat-message-interface",
+      "title": "Remove the winch icon from the chatbot header in Chatbot component (frontend/src/components/Chatbot.tsx) and display only the text 'Winchy' without any accompanying icon in the chat message interface",
+      "reqIds": [
+        "REQ-93"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-name-winchy-as-a-text-label-displayed-directly-under-the-chatbot-toggle-button-icon-in-chatbottoggle-component-frontend-src-components-chatbottoggle-tsx",
+      "title": "Add the name 'Winchy' as a text label displayed directly under the chatbot toggle button icon in ChatbotToggle component (frontend/src/components/ChatbotToggle.tsx)",
+      "reqIds": [
+        "REQ-94"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-create-a-new-etrmembership-component-in-frontend-src-components-etrmembership-tsx-that-displays-the-etr-everyday-subscription-membership-program-with-the-full-name-ethos-towing-recovery-everyday-and-branded-display-name-etr-everyday",
+      "title": "Create a new ETRMembership component in frontend/src/components/ETRMembership.tsx that displays the 'ETR Everyday' subscription membership program with the full name 'Ethos Towing & Recovery Everyday' and branded display name 'ETR Everyday'",
+      "reqIds": [
+        "REQ-95"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-display-the-membership-price-of-110-prominently-in-the-etrmembership-component-with-clear-pricing-presentation",
+      "title": "Display the membership price of $110 prominently in the ETRMembership component with clear pricing presentation",
+      "reqIds": [
+        "REQ-96"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-24-7-roadside-assistance-with-the-heading-247-service-and-description-text-wherever-you-are-we-ll-be-there-when-you-need-us-you-can-count-on-etr-everyday-in-the-etrmembership-component",
+      "title": "Add a feature card for '24/7 roadside assistance' with the heading '247 service' and description text 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.' in the ETRMembership component",
+      "reqIds": [
+        "REQ-97"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-mobile-battery-service-with-an-automotive-battery-icon-and-description-text-don-t-get-stranded-a-battery-boost-or-replacement-is-just-a-phone-call-away-with-superscript-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Mobile battery service' with an automotive battery icon and description text 'Don't get stranded. A battery boost or replacement is just a phone call away.' with superscript ¹¹ in the ETRMembership component",
+      "reqIds": [
+        "REQ-98"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-flat-tire-service-with-a-tire-icon-and-description-text-got-a-flat-we-ll-install-your-spare-tire-so-that-you-can-get-back-on-the-road-with-superscript-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Flat tire service' with a tire icon and description text 'Got a flat? We'll install your spare tire so that you can get back on the road.' with superscript ¹² in the ETRMembership component",
+      "reqIds": [
+        "REQ-99"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-emergency-fuel-and-delivery-with-an-emergency-gas-delivery-icon-and-description-text-if-you-run-out-of-fuel-we-ll-bring-you-enough-to-reach-the-nearest-gas-station-with-superscript-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Emergency fuel and delivery' with an emergency gas delivery icon and description text 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.' with superscript ¹³ in the ETRMembership component",
+      "reqIds": [
+        "REQ-100"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-lockout-services-with-a-car-keys-icon-and-description-text-locked-out-call-etr-if-we-can-t-unlock-your-car-we-ll-get-a-locksmith-who-can-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Lockout services' with a car keys icon and description text 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.' in the ETRMembership component",
+      "reqIds": [
+        "REQ-101"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-member-discounts-with-an-etr-card-in-hand-icon-and-description-text-your-etr-membership-is-the-key-to-saving-you-money-on-everyday-purchases-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Member discounts' with an 'ETR card in hand' icon and description text 'Your ETR Membership is the key to saving you money on everyday purchases.' in the ETRMembership component",
+      "reqIds": [
+        "REQ-102"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-feature-card-for-expert-automotive-advice-with-a-mechanical-first-aid-icon-and-description-text-we-ll-help-you-with-all-things-automotive-from-gas-prices-to-winter-driving-in-the-etrmembership-component",
+      "title": "Add a feature card for 'Expert automotive advice' with a mechanical first aid icon and description text 'We'll help you with all things automotive, from gas prices to winter driving.' in the ETRMembership component",
+      "reqIds": [
+        "REQ-103"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-integrate-the-etrmembership-component-into-the-main-app-tsx-layout-positioning-it-after-the-services-component-and-before-the-servicearea-component-in-the-page-flow",
+      "title": "Integrate the ETRMembership component into the main App.tsx layout, positioning it after the Services component and before the ServiceArea component in the page flow",
+      "reqIds": [
+        "REQ-104"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-include-information-about-the-etr-everyday-membership-program-when-users-ask-about-services-pricing-or-membership-options",
+      "title": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to include information about the ETR Everyday membership program when users ask about services, pricing, or membership options",
+      "reqIds": [
+        "REQ-105"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -859,6 +997,24 @@
     {
       "id": "AR-34",
       "summary": "Remove 'built with ♥ using caffeine.ai' text from the website (likely in footer or attribution area)",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-35",
+      "summary": "Rename chatbot to 'Winchy' and update bot replies to show 'Winchy' as the sender name",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-37",
+      "summary": "Revert chatbot icon to earlier logo scheme (remove winch), display only chatbot name in chat messages without icon, and add 'Winchy' label under the chatbot toggle button icon",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-38",
+      "summary": "Create ETR Everyday subscription section displaying membership details, $110 pricing, and seven benefits with icons",
       "reqIds": [],
       "status": "pending"
     }

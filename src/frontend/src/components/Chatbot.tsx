@@ -73,15 +73,8 @@ export default function Chatbot({
       {/* Header */}
       <div className="bg-secondary text-secondary-foreground p-4 flex items-center justify-between">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-full bg-primary flex items-center justify-center">
-            <img 
-              src="/assets/mii.png" 
-              alt="Ethos Towing" 
-              className="h-8 w-8 object-contain"
-            />
-          </div>
           <div>
-            <h3 className="font-display font-bold text-lg">Ethos Assistant</h3>
+            <h3 className="font-display font-bold text-lg">Winchy</h3>
             <p className="text-xs opacity-90">Always here to help</p>
           </div>
         </div>
@@ -117,22 +110,28 @@ export default function Chatbot({
                   message.sender === 'user' ? 'justify-end' : 'justify-start'
                 }`}
               >
-                <div
-                  className={`max-w-[85%] rounded-2xl px-4 py-3 ${
-                    message.sender === 'user'
-                      ? 'bg-primary text-primary-foreground rounded-br-sm'
-                      : 'bg-card text-card-foreground border border-border rounded-bl-sm'
-                  }`}
-                >
-                  <p className="text-sm whitespace-pre-line leading-relaxed">
-                    {message.text}
-                  </p>
-                </div>
+                {message.sender === 'bot' && (
+                  <div className="flex flex-col gap-1">
+                    <span className="text-xs font-semibold text-muted-foreground ml-1">Winchy</span>
+                    <div className="max-w-[85%] rounded-2xl px-4 py-3 bg-card text-card-foreground border border-border rounded-bl-sm">
+                      <p className="text-sm whitespace-pre-line leading-relaxed">
+                        {message.text}
+                      </p>
+                    </div>
+                  </div>
+                )}
+                {message.sender === 'user' && (
+                  <div className="max-w-[85%] rounded-2xl px-4 py-3 bg-primary text-primary-foreground rounded-br-sm">
+                    <p className="text-sm whitespace-pre-line leading-relaxed">
+                      {message.text}
+                    </p>
+                  </div>
+                )}
               </div>
               
               {/* Suggestions */}
               {message.sender === 'bot' && message.suggestions && message.suggestions.length > 0 && (
-                <div className="flex flex-wrap gap-2 mt-3 ml-2">
+                <div className="flex flex-wrap gap-2 mt-3">
                   {message.suggestions.map((suggestion, idx) => (
                     <Button
                       key={idx}

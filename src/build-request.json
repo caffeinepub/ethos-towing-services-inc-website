@@ -1,35 +1,226 @@
 {
   "kind": "build_request",
-  "title": "Remove Caffeine.ai attribution from footer",
+  "title": "Add ETR Everyday subscription membership section",
+  "projectName": "Ethos Towing Recovery",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-88",
-      "text": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
+      "id": "REQ-95",
+      "text": "Create a new ETRMembership component in frontend/src/components/ETRMembership.tsx that displays the 'ETR Everyday' subscription membership program with the full name 'Ethos Towing & Recovery Everyday' and branded display name 'ETR Everyday'",
       "target": "frontend",
       "source": {
         "messageIds": [
           "msg-last"
         ],
         "quotes": [
-          "remove the \"built with ♥ using caffeine.ai"
+          "subscription model called \"Ethos Towing & Recovery Everyday\" branded as \"ETR Everyday\""
         ]
       },
       "acceptanceCriteria": [
-        "The attribution text 'built with ♥ using caffeine.ai' is completely removed from the Footer component",
-        "The footer layout adjusts properly after the text removal without leaving empty space or layout issues",
-        "All other footer content (contact details, business hours, social media links, copyright notice) remains intact and properly displayed"
+        "Component is created at frontend/src/components/ETRMembership.tsx",
+        "Section displays both the full name 'Ethos Towing & Recovery Everyday' and the branded name 'ETR Everyday'",
+        "Component follows the existing design system with red, white, and blue color palette",
+        "Layout is responsive and works on mobile and desktop viewports"
+      ]
+    },
+    {
+      "id": "REQ-96",
+      "text": "Display the membership price of $110 prominently in the ETRMembership component with clear pricing presentation",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "priced the membership at $110"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Price of $110 is displayed prominently in the membership section",
+        "Pricing uses clear, readable typography consistent with the design system",
+        "Price presentation conveys value and authority"
+      ]
+    },
+    {
+      "id": "REQ-97",
+      "text": "Add a feature card for '24/7 roadside assistance' with the heading '247 service' and description text 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.' in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "247 service\n24/7 roadside assistance¹⁰\nWherever you are, we'll be there when you need us. You can count on ETR Everyday."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays '247 service' as the heading",
+        "Card includes '24/7 roadside assistance' as the feature title with superscript ¹⁰",
+        "Description text matches: 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.'",
+        "Card includes an appropriate icon for 24/7 service",
+        "Styling is consistent with other feature cards in the section"
+      ]
+    },
+    {
+      "id": "REQ-98",
+      "text": "Add a feature card for 'Mobile battery service' with an automotive battery icon and description text 'Don't get stranded. A battery boost or replacement is just a phone call away.' with superscript ¹¹ in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Automotive battery (this is an icon)\nMobile battery service¹¹\nDon't get stranded. A battery boost or replacement is just a phone call away."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Mobile battery service' as the title with superscript ¹¹",
+        "Card includes an automotive battery icon",
+        "Description text matches: 'Don't get stranded. A battery boost or replacement is just a phone call away.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-99",
+      "text": "Add a feature card for 'Flat tire service' with a tire icon and description text 'Got a flat? We'll install your spare tire so that you can get back on the road.' with superscript ¹² in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Tire (this is an icon)\nFlat tire service¹²\nGot a flat? We'll install your spare tire so that you can get back on the road."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Flat tire service' as the title with superscript ¹²",
+        "Card includes a tire icon",
+        "Description text matches: 'Got a flat? We'll install your spare tire so that you can get back on the road.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-100",
+      "text": "Add a feature card for 'Emergency fuel and delivery' with an emergency gas delivery icon and description text 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.' with superscript ¹³ in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Emergency gas delivery (this is an icon)\nEmergency fuel and delivery¹³\nIf you run out of fuel, we'll bring you enough to reach the nearest gas station."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Emergency fuel and delivery' as the title with superscript ¹³",
+        "Card includes an emergency gas delivery icon",
+        "Description text matches: 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-101",
+      "text": "Add a feature card for 'Lockout services' with a car keys icon and description text 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.' in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Car keys (this is an icon)\nLockout services\nLocked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Lockout services' as the title",
+        "Card includes a car keys icon",
+        "Description text matches: 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-102",
+      "text": "Add a feature card for 'Member discounts' with an 'ETR card in hand' icon and description text 'Your ETR Membership is the key to saving you money on everyday purchases.' in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "ETR card in hand (this is an icon)\nMember discounts\nYour ETR Membership is the key to saving you money on everyday purchases."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Member discounts' as the title",
+        "Card includes an 'ETR card in hand' icon or similar membership card icon",
+        "Description text matches: 'Your ETR Membership is the key to saving you money on everyday purchases.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-103",
+      "text": "Add a feature card for 'Expert automotive advice' with a mechanical first aid icon and description text 'We'll help you with all things automotive, from gas prices to winter driving.' in the ETRMembership component",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ],
+        "quotes": [
+          "Mechanical first aid (this is an icon)\nExpert automotive advice\nWe'll help you with all things automotive, from gas prices to winter driving."
+        ]
+      },
+      "acceptanceCriteria": [
+        "Feature card displays 'Expert automotive advice' as the title",
+        "Card includes a mechanical first aid icon or similar automotive assistance icon",
+        "Description text matches: 'We'll help you with all things automotive, from gas prices to winter driving.'",
+        "Icon and styling are consistent with other feature cards"
+      ]
+    },
+    {
+      "id": "REQ-104",
+      "text": "Integrate the ETRMembership component into the main App.tsx layout, positioning it after the Services component and before the ServiceArea component in the page flow",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ]
+      },
+      "acceptanceCriteria": [
+        "ETRMembership component is imported in frontend/src/App.tsx",
+        "Component is rendered in the page layout after Services and before ServiceArea",
+        "Component displays correctly in the overall page flow without layout issues"
+      ]
+    },
+    {
+      "id": "REQ-105",
+      "text": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to include information about the ETR Everyday membership program when users ask about services, pricing, or membership options",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-last"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Chatbot responses include ETR Everyday membership information when relevant",
+        "Responses mention the $110 membership price",
+        "Responses reference key benefits like 24/7 roadside assistance, battery service, flat tire service, fuel delivery, lockout services, member discounts, and expert advice",
+        "Chatbot can answer questions about membership features and pricing"
       ]
     }
   ],
   "constraints": [
-    "Do not modify any other footer content beyond the Caffeine.ai attribution",
-    "Maintain the existing footer layout structure and styling"
+    "Use the existing red, white, and blue color palette from the design system",
+    "Follow the existing component patterns and styling conventions used in About.tsx and Services.tsx",
+    "Maintain consistency with the professional, authoritative design aesthetic",
+    "Do not modify backend/main.mo or backend/migration.mo",
+    "Do not edit files in frontend/src/hooks/ or frontend/src/components/ui/",
+    "Use lucide-react icons or similar icon library already in use for feature card icons"
   ],
   "nonGoals": [
-    "Redesigning the entire footer component",
-    "Adding new attribution or branding text",
-    "Changing footer colors or typography"
+    "Creating a backend storage system for membership purchases",
+    "Implementing payment processing for membership subscriptions",
+    "Building a user account system for managing memberships",
+    "Creating a membership registration form",
+    "Adding membership authentication or verification features"
   ],
   "imageRequirements": {
     "required": [],

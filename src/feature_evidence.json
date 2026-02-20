@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-remove-the-built-with-using-caffeine-ai-text-from-the-footer-component",
-      "featureTitle": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
+      "featureId": "feature-create-a-new-etrmembership-component-in-frontend-src-components-etrmembership-tsx-that-displays-the-etr-everyday-subscription-membership-program-with-the-full-name-ethos-towing-recovery-everyday-and-branded-display-name-etr-everyday",
+      "featureTitle": "Create a new ETRMembership component in frontend/src/components/ETRMembership.tsx that displays the 'ETR Everyday' subscription membership program with the full name 'Ethos Towing & Recovery Everyday' and branded display name 'ETR Everyday'",
       "files": [
-        "frontend/src/components/Footer.tsx"
+        "frontend/src/components/ETRMembership.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,7 +15,187 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-88"
+        "REQ-95"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-display-the-membership-price-of-110-prominently-in-the-etrmembership-component-with-clear-pricing-presentation",
+      "featureTitle": "Display the membership price of $110 prominently in the ETRMembership component with clear pricing presentation",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-96"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-24-7-roadside-assistance-with-the-heading-247-service-and-description-text-wherever-you-are-we-ll-be-there-when-you-need-us-you-can-count-on-etr-everyday-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for '24/7 roadside assistance' with the heading '247 service' and description text 'Wherever you are, we'll be there when you need us. You can count on ETR Everyday.' in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-97"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-mobile-battery-service-with-an-automotive-battery-icon-and-description-text-don-t-get-stranded-a-battery-boost-or-replacement-is-just-a-phone-call-away-with-superscript-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Mobile battery service' with an automotive battery icon and description text 'Don't get stranded. A battery boost or replacement is just a phone call away.' with superscript ¹¹ in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-98"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-flat-tire-service-with-a-tire-icon-and-description-text-got-a-flat-we-ll-install-your-spare-tire-so-that-you-can-get-back-on-the-road-with-superscript-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Flat tire service' with a tire icon and description text 'Got a flat? We'll install your spare tire so that you can get back on the road.' with superscript ¹² in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-99"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-emergency-fuel-and-delivery-with-an-emergency-gas-delivery-icon-and-description-text-if-you-run-out-of-fuel-we-ll-bring-you-enough-to-reach-the-nearest-gas-station-with-superscript-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Emergency fuel and delivery' with an emergency gas delivery icon and description text 'If you run out of fuel, we'll bring you enough to reach the nearest gas station.' with superscript ¹³ in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-100"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-lockout-services-with-a-car-keys-icon-and-description-text-locked-out-call-etr-if-we-can-t-unlock-your-car-we-ll-get-a-locksmith-who-can-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Lockout services' with a car keys icon and description text 'Locked out? Call ETR. If we can't unlock your car, we'll get a locksmith who can.' in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-101"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-member-discounts-with-an-etr-card-in-hand-icon-and-description-text-your-etr-membership-is-the-key-to-saving-you-money-on-everyday-purchases-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Member discounts' with an 'ETR card in hand' icon and description text 'Your ETR Membership is the key to saving you money on everyday purchases.' in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-102"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-feature-card-for-expert-automotive-advice-with-a-mechanical-first-aid-icon-and-description-text-we-ll-help-you-with-all-things-automotive-from-gas-prices-to-winter-driving-in-the-etrmembership-component",
+      "featureTitle": "Add a feature card for 'Expert automotive advice' with a mechanical first aid icon and description text 'We'll help you with all things automotive, from gas prices to winter driving.' in the ETRMembership component",
+      "files": [
+        "frontend/src/components/ETRMembership.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-103"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-integrate-the-etrmembership-component-into-the-main-app-tsx-layout-positioning-it-after-the-services-component-and-before-the-servicearea-component-in-the-page-flow",
+      "featureTitle": "Integrate the ETRMembership component into the main App.tsx layout, positioning it after the Services component and before the ServiceArea component in the page flow",
+      "files": [
+        "frontend/src/App.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-104"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-include-information-about-the-etr-everyday-membership-program-when-users-ask-about-services-pricing-or-membership-options",
+      "featureTitle": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to include information about the ETR Everyday membership program when users ask about services, pricing, or membership options",
+      "files": [
+        "frontend/src/utils/chatbotResponses.ts"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-105"
       ],
       "confidence": "high"
     }

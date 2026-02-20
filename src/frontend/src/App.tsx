@@ -2,6 +2,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import About from './components/About';
 import Services from './components/Services';
+import ETRMembership from './components/ETRMembership';
 import ServiceArea from './components/ServiceArea';
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
@@ -20,6 +21,7 @@ function App() {
         <Hero />
         <About />
         <Services />
+        <ETRMembership />
         <ServiceArea />
         <ContactForm />
       </main>
