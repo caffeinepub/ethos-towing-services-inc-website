@@ -1,100 +1,35 @@
 {
   "kind": "build_request",
-  "title": "Fix mobile header text sizing, merge Jump Start into Vehicle Recovery, and fix chatbot form button",
+  "title": "Remove Caffeine.ai attribution from footer",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-84",
-      "text": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
+      "id": "REQ-88",
+      "text": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "msg-user-final"
+          "msg-last"
         ],
         "quotes": [
-          "in the mobile version ETHOS Towing & Recovery doesnt properly fit the area, resize the text so it can fit properly"
+          "remove the \"built with ♥ using caffeine.ai"
         ]
       },
       "acceptanceCriteria": [
-        "Company name text displays fully within mobile header bounds",
-        "Text is legible and properly sized for mobile screens",
-        "No horizontal scrolling or text overflow on mobile devices",
-        "Text size adjusts responsively for different mobile viewport widths"
-      ]
-    },
-    {
-      "id": "REQ-85",
-      "text": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-final"
-        ],
-        "quotes": [
-          "don't make jump start a seperate service incoporate it in vehicle recovery section rename it if needed"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Services component displays six service cards instead of seven",
-        "Vehicle Recovery service card includes jump start assistance in its description",
-        "Service card title reflects the inclusion of jump start services (e.g., 'Vehicle Recovery & Jump Start')",
-        "Jump Start Service no longer appears as a standalone service card",
-        "Service grid layout remains balanced with six cards"
-      ]
-    },
-    {
-      "id": "REQ-86",
-      "text": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-final"
-        ],
-        "quotes": [
-          "if we tap fill out form in the chatbot it does not come out fix it"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Clicking 'Fill out form' button in chatbot successfully scrolls to or reveals the contact form",
-        "Functionality works on both desktop and mobile devices",
-        "Contact form becomes visible and accessible after button tap",
-        "User can interact with the contact form fields after triggering the action",
-        "No console errors occur when the button is clicked"
-      ]
-    },
-    {
-      "id": "REQ-87",
-      "text": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "msg-user-final"
-        ],
-        "quotes": [
-          "don't make jump start a seperate service incoporate it in vehicle recovery section"
-        ]
-      },
-      "acceptanceCriteria": [
-        "Chatbot responses list six services instead of seven",
-        "Vehicle Recovery service description mentions jump start assistance",
-        "Jump Start is not listed as a separate service in chatbot responses",
-        "Service type queries return accurate information about the updated service structure"
+        "The attribution text 'built with ♥ using caffeine.ai' is completely removed from the Footer component",
+        "The footer layout adjusts properly after the text removal without leaving empty space or layout issues",
+        "All other footer content (contact details, business hours, social media links, copyright notice) remains intact and properly displayed"
       ]
     }
   ],
   "constraints": [
-    "Maintain the existing red, white, and blue color scheme",
-    "Preserve the professional, authoritative design aesthetic",
-    "Do not modify backend/main.mo or other backend files",
-    "Keep the chatbot integration functional throughout changes",
-    "Maintain responsive design for all viewport sizes"
+    "Do not modify any other footer content beyond the Caffeine.ai attribution",
+    "Maintain the existing footer layout structure and styling"
   ],
   "nonGoals": [
-    "Redesigning the entire header component layout",
-    "Changing the total number of features in the About section",
-    "Modifying the service area coverage information",
-    "Altering the contact form field structure",
-    "Changing the chatbot's overall functionality beyond the form button fix"
+    "Redesigning the entire footer component",
+    "Adding new attribution or branding text",
+    "Changing footer colors or typography"
   ],
   "imageRequirements": {
     "required": [],

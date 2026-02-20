@@ -1,12 +1,10 @@
 # Specification
 
 ## Summary
-**Goal:** Fix mobile header text sizing, merge Jump Start service into Vehicle Recovery, and fix chatbot form button.
+**Goal:** Remove the Caffeine.ai attribution text from the website footer.
 
 **Planned changes:**
-- Resize 'ETHOS Towing & Recovery' text in header to fit properly on mobile viewports
-- Remove Jump Start as a separate service and incorporate it into Vehicle Recovery service (rename to 'Vehicle Recovery & Jump Start' or similar)
-- Fix chatbot 'Fill out form' button to properly open/display contact form on all devices
-- Update chatbot responses to reflect that Jump Start is now part of Vehicle Recovery services
+- Remove the "built with ♥ using caffeine.ai" text from the Footer component
+- Ensure footer layout adjusts properly without empty space or layout issues
 
-**User-visible outcome:** Mobile users will see properly sized header text, the services section will display six consolidated service cards with jump start included in vehicle recovery, and the chatbot form button will successfully open the contact form on all devices.
+**User-visible outcome:** The footer will display only business information (contact details, hours, social links, copyright) without the Caffeine.ai attribution text.

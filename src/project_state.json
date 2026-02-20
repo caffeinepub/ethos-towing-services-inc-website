@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 43,
+  "projectStateVersion": 45,
   "summary": "Professional website for Ethos Towing & Recovery INC, a towing and recovery company based in Fresno, California, offering services within 200-400 miles radius, operated by an experienced team, featuring a professional, modern, authoritative design with full authority emphasis and easy navigation. Contact form submissions are stored in the backend canister and can be accessed manually or through an admin panel. Website includes an integrated chatbot for customer interaction and displays jump start services.",
   "architectural_notes": [
     "Website type: Professional service business website for towing company",
@@ -693,6 +693,14 @@
         "REQ-87"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-remove-the-built-with-using-caffeine-ai-text-from-the-footer-component",
+      "title": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
+      "reqIds": [
+        "REQ-88"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -845,6 +853,12 @@
     {
       "id": "AR-33",
       "summary": "Fix chatbot 'Fill out form' button not opening the contact form when tapped",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-34",
+      "summary": "Remove 'built with ♥ using caffeine.ai' text from the website (likely in footer or attribution area)",
       "reqIds": [],
       "status": "pending"
     }

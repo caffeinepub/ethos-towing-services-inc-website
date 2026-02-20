@@ -2,10 +2,10 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-resize-the-ethos-towing-recovery-text-in-the-header-component-for-mobile-viewports-so-it-fits-properly-within-the-available-header-area-without-overflowing-or-being-cut-off",
-      "featureTitle": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
+      "featureId": "feature-remove-the-built-with-using-caffeine-ai-text-from-the-footer-component",
+      "featureTitle": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
       "files": [
-        "frontend/src/components/Header.tsx"
+        "frontend/src/components/Footer.tsx"
       ],
       "components": [
         "core-infrastructure@1.0.2",
@@ -15,61 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-84"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-remove-jump-start-service-as-a-separate-seventh-service-card-from-the-services-component-and-incorporate-jump-start-assistance-into-the-vehicle-recovery-service-description-renaming-the-vehicle-recovery-service-to-vehicle-recovery-jump-start-or-similar-appropriate-title",
-      "featureTitle": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
-      "files": [
-        "frontend/src/components/Services.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-85"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-fix-the-chatbot-fill-out-form-suggestion-button-functionality-so-that-clicking-or-tapping-it-properly-opens-displays-the-contact-form-on-all-devices-including-mobile",
-      "featureTitle": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
-      "files": [
-        "frontend/src/components/Chatbot.tsx"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-86"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-chatbot-responses-in-frontend-src-utils-chatbotresponses-ts-to-reflect-that-jump-start-service-is-now-part-of-vehicle-recovery-services-rather-than-a-standalone-offering",
-      "featureTitle": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
-      "files": [
-        "frontend/src/utils/chatbotResponses.ts"
-      ],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-87"
+        "REQ-88"
       ],
       "confidence": "high"
     }

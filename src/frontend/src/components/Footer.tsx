@@ -1,11 +1,8 @@
-import { Phone, Mail, MapPin, Clock, Heart } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 import { SiFacebook, SiX, SiInstagram } from 'react-icons/si';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
-  const appIdentifier = typeof window !== 'undefined' 
-    ? encodeURIComponent(window.location.hostname) 
-    : 'ethos-towing';
 
   return (
     <footer className="bg-secondary text-secondary-foreground border-t border-secondary-foreground/10">
@@ -166,21 +163,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-secondary-foreground/10 pt-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-sm text-secondary-foreground/70 text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4">
+            <p className="text-sm text-secondary-foreground/70 text-center">
               © {currentYear} Ethos Towing & Recovery INC. All rights reserved.
             </p>
-            
-            <a 
-              href={`https://caffeine.ai/?utm_source=Caffeine-footer&utm_medium=referral&utm_content=${appIdentifier}`}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 text-sm text-secondary-foreground/70 hover:text-primary transition-colors group"
-            >
-              <span>Built with</span>
-              <Heart className="h-4 w-4 text-primary group-hover:scale-110 transition-transform" fill="currentColor" />
-              <span>using caffeine.ai</span>
-            </a>
           </div>
         </div>
       </div>

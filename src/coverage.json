@@ -1,58 +1,24 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-19T21:13:01.088Z",
+  "generatedAt": "2026-02-20T05:30:08.772Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 4,
-    "implemented": 4,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-84",
-        "summary": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area without overflowing or being cut off",
+        "id": "REQ-88",
+        "summary": "Remove the 'built with ♥ using caffeine.ai' text from the Footer component",
         "status": "implemented",
         "plannedFiles": [
-          "frontend/src/components/Header.tsx"
+          "frontend/src/components/Footer.tsx"
         ],
         "matchedFiles": [
-          "frontend/src/components/Header.tsx"
-        ]
-      },
-      {
-        "id": "REQ-85",
-        "summary": "Remove Jump Start Service as a separate seventh service card from the Services component and incorporate jump start assistance into the Vehicle Recovery service description, renaming the Vehicle Recovery service to 'Vehicle Recovery & Jump Start' or similar appropriate title",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Services.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Services.tsx"
-        ]
-      },
-      {
-        "id": "REQ-86",
-        "summary": "Fix the chatbot 'Fill out form' suggestion button functionality so that clicking or tapping it properly opens/displays the contact form on all devices including mobile",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/components/Chatbot.tsx",
-          "frontend/src/components/ContactForm.tsx"
-        ],
-        "matchedFiles": [
-          "frontend/src/components/Chatbot.tsx"
-        ]
-      },
-      {
-        "id": "REQ-87",
-        "summary": "Update the chatbot responses in frontend/src/utils/chatbotResponses.ts to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/src/utils/chatbotResponses.ts"
-        ],
-        "matchedFiles": [
-          "frontend/src/utils/chatbotResponses.ts"
+          "frontend/src/components/Footer.tsx"
         ]
       }
     ]
@@ -62,10 +28,7 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/src/components/Chatbot.tsx",
-    "frontend/src/components/Header.tsx",
-    "frontend/src/components/Services.tsx",
-    "frontend/src/utils/chatbotResponses.ts",
+    "frontend/src/components/Footer.tsx",
     "project_state.json",
     "scratch/component-selection.json",
     "spec.md",

@@ -1,80 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Fix mobile header text sizing, merge Jump Start into Vehicle Recovery, and fix chatbot form button",
+  "title": "Remove Caffeine.ai attribution from footer",
   "requirements": [
     {
-      "id": "REQ-84",
-      "summary": "Resize the 'ETHOS Towing & Recovery' text in the Header component for mobile viewports so it fits properly within the available header area",
+      "id": "REQ-88",
+      "summary": "Remove the 'built with ♥ using caffeine.ai' attribution text from the Footer component",
       "acceptanceCriteria": [
-        "Company name text displays fully within mobile header bounds",
-        "Text is legible and properly sized for mobile screens",
-        "No horizontal scrolling or text overflow on mobile devices",
-        "Text size adjusts responsively for different mobile viewport widths"
+        "The attribution text 'built with ♥ using caffeine.ai' is completely removed from the Footer component",
+        "The footer layout adjusts properly after the text removal without leaving empty space or layout issues",
+        "All other footer content (contact details, business hours, social media links, copyright notice) remains intact and properly displayed"
       ],
       "file_operations": [
         {
-          "path": "frontend/src/components/Header.tsx",
+          "path": "frontend/src/components/Footer.tsx",
           "operation": "modify",
-          "description": "Add responsive text sizing using Tailwind breakpoint classes to the company name heading element. Apply smaller font sizes (text-lg or text-xl) for mobile viewports and larger sizes (text-2xl or text-3xl) for desktop viewports to ensure the text fits within the header bounds without overflow on all devices."
-        }
-      ]
-    },
-    {
-      "id": "REQ-85",
-      "summary": "Remove Jump Start Service as a separate service card and incorporate jump start assistance into the Vehicle Recovery service, renaming it appropriately",
-      "acceptanceCriteria": [
-        "Services component displays six service cards instead of seven",
-        "Vehicle Recovery service card includes jump start assistance in its description",
-        "Service card title reflects the inclusion of jump start services (e.g., 'Vehicle Recovery & Jump Start')",
-        "Jump Start Service no longer appears as a standalone service card",
-        "Service grid layout remains balanced with six cards"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Services.tsx",
-          "operation": "modify",
-          "description": "Remove the Jump Start Service object from the services array. Update the Vehicle Recovery service object by changing its title to 'Vehicle Recovery & Jump Start' and expanding its description to mention jump start assistance as part of the recovery services offered. Ensure the services array contains exactly six service objects after this change."
-        }
-      ]
-    },
-    {
-      "id": "REQ-86",
-      "summary": "Fix the chatbot 'Fill out form' suggestion button functionality so clicking it properly opens/displays the contact form on all devices",
-      "acceptanceCriteria": [
-        "Clicking 'Fill out form' button in chatbot successfully scrolls to or reveals the contact form",
-        "Functionality works on both desktop and mobile devices",
-        "Contact form becomes visible and accessible after button tap",
-        "User can interact with the contact form fields after triggering the action",
-        "No console errors occur when the button is clicked"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/components/Chatbot.tsx",
-          "operation": "modify",
-          "description": "Update the handleSuggestionClick function to properly handle the 'Fill out form' suggestion. Implement smooth scrolling behavior using scrollIntoView with behavior: 'smooth' to navigate to the ContactForm component's DOM element. Ensure the chatbot closes after the button is clicked to avoid blocking the form. Add proper error handling and ensure the scroll target element exists before attempting to scroll."
-        },
-        {
-          "path": "frontend/src/components/ContactForm.tsx",
-          "operation": "modify",
-          "description": "Add an id attribute (e.g., 'contact-form') to the main container element of the ContactForm component to serve as a scroll target for the chatbot's form navigation functionality. Ensure the id is applied to the outermost wrapper element of the form section."
-        }
-      ]
-    },
-    {
-      "id": "REQ-87",
-      "summary": "Update chatbot responses to reflect that Jump Start Service is now part of Vehicle Recovery services rather than a standalone offering",
-      "acceptanceCriteria": [
-        "Chatbot responses list six services instead of seven",
-        "Vehicle Recovery service description mentions jump start assistance",
-        "Jump Start is not listed as a separate service in chatbot responses",
-        "Service type queries return accurate information about the updated service structure"
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/src/utils/chatbotResponses.ts",
-          "operation": "modify",
-          "description": "Update the service listing responses to show six services instead of seven by removing Jump Start Service from standalone mentions. Modify the Vehicle Recovery service description in responses to include jump start assistance. Update any keyword mappings or response patterns that reference jump start to redirect to the Vehicle Recovery & Jump Start service information. Ensure consistency across all response patterns that enumerate or describe available services."
+          "description": "Remove the 'built with ♥ using caffeine.ai' attribution text from the Footer component while preserving all other footer content including contact details, business hours, quick links, social media icons, and copyright notice. Ensure the footer layout adjusts properly without leaving empty space or layout issues after the text removal."
         }
       ]
     }
